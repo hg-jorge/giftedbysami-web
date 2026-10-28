@@ -107,7 +107,7 @@ button{font:inherit;color:inherit}
 
 /* ===== SECCIÓN: revelado (servicios: lo que aparece al romper la galleta) ===== */
 .revelado.aparece{animation:aparece .7s ease-out}
-@keyframes aparece{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes aparece{from{opacity:0}to{opacity:1}}
 
 /* ===== SECCIÓN: tickets (servicios) ===== */
 .tickets{background:var(--blanco)}
@@ -171,6 +171,15 @@ button{font:inherit;color:inherit}
 @keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.5);opacity:0}}
 .toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--negro);color:var(--blanco);font-size:14px;padding:10px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:60;max-width:calc(100% - 32px);text-align:center}
 .toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ===== SECCIÓN: transiciones (al cambiar de página y al abrir el submenú) ===== */
+/* Se animan las secciones, no el <body>, para no mover el botón flotante de WhatsApp */
+body > .sec,body > main{animation:entrar .5s cubic-bezier(.2,.7,.2,1) both}
+html.saliendo body > .sec,html.saliendo body > main{animation:salir .28s ease-in forwards}
+@keyframes entrar{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes salir{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-10px)}}
+.submenu:not([hidden]){animation:desplegar .22s ease-out}
+@keyframes desplegar{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 
 /* =====================================================================
    CELULAR (menos de 820 px): una sola columna, primero la información

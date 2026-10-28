@@ -95,4 +95,23 @@
       setTimeout(function(){ galleta.classList.remove('open'); ocupada = false; }, 3000);
     });
   }
+
+  // Transición al cambiar de página: la página actual se desvanece y luego se navega.
+  // La entrada de la nueva página la hace el CSS (sección "transiciones").
+  var sinMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href]');
+    if (!a || sinMovimiento || e.defaultPrevented) return;
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;  // abrir en pestaña nueva, etc.
+    if (a.target === '_blank' || a.hasAttribute('download') || a.hasAttribute('data-pending')) return;
+    var url = new URL(a.href, location.href);
+    if (url.protocol !== location.protocol || url.host !== location.host) return;    // enlaces a otros sitios
+    if (!/\.html$|\/$/.test(url.pathname)) return;                                   // solo páginas del sitio
+    if (url.pathname === location.pathname && url.hash) return;                      // saltos dentro de la misma página
+    e.preventDefault();
+    document.documentElement.classList.add('saliendo');
+    setTimeout(function(){ location.href = url.href; }, 280);
+  });
+  // Al regresar con el botón "atrás", el navegador puede mostrar la página tal como quedó: se quita el desvanecido
+  window.addEventListener('pageshow', function(){ document.documentElement.classList.remove('saliendo'); });
 })();
