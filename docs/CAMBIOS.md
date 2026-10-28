@@ -2,6 +2,9 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-10-28 · Publicación
+- **Sitio publicado** en GitHub Pages: https://hg-jorge.github.io/giftedbysami-web/ (rama `main`, carpeta raíz).
+
 ## 2026-10-28 · Ajustes
 - **Footer (4 páginas):** el enlace "Correo" ahora abre un correo nuevo a sami@giftedbysami.com.
 - **404.html:** página propia para direcciones que no existen, con botón para regresar a home.
