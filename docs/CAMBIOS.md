@@ -3,6 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-28 · Ajustes
+- **Head (4 páginas):** descripciones para Google con zonas de entrega y Monterrey.
 - **Head (4 páginas):** títulos de pestaña con servicio y Monterrey (para Google).
 - **Head (about, servicios, FAQ):** se carga Nunito Sans, sustituto de Avenir en Windows/Android, igual que en home.
 - **Cartelera (home):** imagen de "Zonas de entrega" reemplazada por la versión de alta calidad que entregó Jorge (`home-cartelera.webp`, 2732 px de ancho).
