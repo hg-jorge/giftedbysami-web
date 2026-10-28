@@ -3,6 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-28 · Ajustes
+- **404.html:** página propia para direcciones que no existen, con botón para regresar a home.
 - **Imágenes (4 páginas):** las que no se ven al abrir la página cargan después (`loading="lazy"`), para que abra más rápido en celular.
 - **Head (4 páginas):** vista previa al compartir en WhatsApp/Facebook (título, descripción e imagen `og-imagen.jpg` 1200×630). Dirección provisional de GitHub; cambiar al conectar el dominio.
 - **Head (4 páginas):** favicon con el logo negro sobre fondo crema (pestaña, iPhone y Android). Original guardado en `../respaldo-original/`.
