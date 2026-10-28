@@ -5,7 +5,7 @@
 - Repositorio: `giftedbysami-web` (público)
 - GitHub Pages: rama `main`, carpeta `/ (root)`
 - URL temporal: https://hg-jorge.github.io/giftedbysami-web/
-- Dominio final: `giftedbysami.com` (correo de Sami en Google Workspace, **no tocar MX/TXT**)
+- Dominio final: `giftedbysami.com`, registrado en **Squarespace** (correo de Sami en Google Workspace, **no tocar MX/TXT**)
 
 ## 1. Publicar un cambio (día a día)
 Claude hace estos pasos y te avisa antes del último:
@@ -35,6 +35,7 @@ Pasos generales:
 5. En **Settings → Pages → Custom domain** escribir `giftedbysami.com` → **Save**.
 6. Cuando GitHub lo permita, marcar **Enforce HTTPS** (puede tardar desde minutos hasta 24 h).
 7. Probar `https://giftedbysami.com` y `https://www.giftedbysami.com`.
+8. Cambiar la dirección de la vista previa al compartir (`og:url` y `og:image` en las 4 páginas) a `https://giftedbysami.com/`.
 
 Propagación DNS: normalmente minutos a pocas horas; puede llegar a 24-48 h.
 

@@ -14,7 +14,7 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
   `personalizado`, `grupal`, `express` (celular rosa), `footer`, `flotante`.
 - [ ] **Submenú "picks"** (home y barra de menú): destino de `temporada`, `trending` y `all year`. Hoy muestran "estarán disponibles pronto".
 - [ ] **"VER CATÁLOGO"** (ticket Sami's Picks): destino. Hoy muestra "estará disponible pronto".
-- [ ] **Favicon** → Jorge lo tiene; va en `assets/img/` (se conecta en Fase 3).
+- [x] **Favicon** → listo (2026-10-28). Original en `../respaldo-original/Logo GIFTED by SAMI.png`.
 
 ## Precios (se publican así por ahora; cambiarán)
 | Servicio | Precio hoy | Dónde vive |
@@ -27,6 +27,7 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 Para cambiar un precio de ticket: se edita en Canva, se exporta y se recorta la imagen nueva.
 
 ## Publicación
-- [ ] Fase 3: revisión ligera (title, description, favicon, Open Graph, alt, celular, WhatsApp).
+- [x] Fase 3: revisión ligera (títulos, descripciones, favicon, vista previa, h1, letra del menú, carga diferida, 404).
+- [ ] Al conectar el dominio: cambiar `https://hg-jorge.github.io/giftedbysami-web/` por `https://giftedbysami.com/` en `og:url` y `og:image` de las 4 páginas.
 - [ ] Fase 4-5: subir a GitHub y activar Pages.
 - [ ] Fase 6: conectar `giftedbysami.com` + HTTPS.
