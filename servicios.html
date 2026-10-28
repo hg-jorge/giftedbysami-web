@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios · Gifted by Sami</title>
+<meta name="description" content="Así funciona: me cuentas, te propongo y yo resuelvo. Regalos personalizados, grupales, Sami's Picks y servicio express.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ===== SECCIÓN: como-funciona ===== -->
+<main>
+<section class="sec como" id="como-funciona">
+  <div class="stage" style="--H:832">
+    <h1 class="abs titulo" style="--x:77;--y:48.5;--w:465"><img src="assets/img/servicios-como-funciona.webp" alt="¿Cómo funciona?"></h1>
+    <div class="abs t pasos" style="--x:77;--y:192;--w:659;--fs:26.2">
+      <p><b>1. <i>Me cuentas.</i></b><br>Me escribes por WhatsApp y te mando un formulario.<br>Lo llenas en 5 minutos.</p>
+      <p><b>2. <i>Te propongo.</i></b><br>Dos propuestas pensadas para esa persona o tu grupo, con productos reales.</p>
+      <p><b>3. <i>Tú eliges, yo resuelvo.</i></b><br>Eliges la que más te guste y yo compro, envuelvo, pongo la tarjeta y lo entrego.</p>
+    </div>
+    <!-- Galleta: se mueve como si quisiera romperse; al hacer clic se abre y muestra "revelado" (abajo). Al recargar vuelve a cerrarse. -->
+    <button class="abs galleta" id="galleta" type="button" style="--x:833;--y:217;--w:443.5" aria-expanded="false" aria-controls="revelado" aria-label="Romper la galleta de la fortuna para ver los servicios">
+      <img class="g-cerrada" src="assets/img/galleta-cerrada.webp" alt="Galleta de la fortuna: start here">
+      <img class="g-abierta" src="assets/img/galleta-abierta.webp" alt="" aria-hidden="true">
+    </button>
+    <p class="abs t listo" style="--x:77;--y:630;--w:731;--fs:23.6">Listo, quedaste increíble.<br><i>Y si quieres,</i> te aviso el año que viene antes de la fecha.</p>
+    <p class="abs t prefieres" style="--x:77;--y:737;--w:1086;--fs:20.6">¿Prefieres algo ya listo? Escoge un <i>pick</i> del catálogo, me escribes, pagas y te lo entrego. Súper sencillo.</p>
+  </div>
+</section>
+<!-- ===== FIN: como-funciona ===== -->
+
+<!-- ===== SECCIÓN: revelado (escondido hasta romper la galleta) ===== -->
+<div class="revelado" id="revelado" hidden>
+
+  <!-- ===== SECCIÓN: tickets ===== -->
+  <section class="sec tickets" id="tickets">
+    <div class="stage" style="--H:1273">
+      <img class="abs abierta" style="--x:672.5;--y:82;--w:621" src="assets/img/servicios-galleta-abierta.webp" alt="Galleta de la fortuna abierta: your perfect gift is closer than you think">
+      <h2 class="abs pick" id="pick-your-ticket" style="--x:96.5;--y:217;--w:457"><img src="assets/img/servicios-pick-your-ticket.webp" alt="pick your ticket:"></h2>
+      <!-- PRECIOS: el precio que se ve está DENTRO de las imágenes servicios-ticket-*.webp.
+           También aparece en texto en aria-label y alt de cada ticket. Si cambia un precio: imagen + aria-label + alt. -->
+      <a class="abs tk" style="--x:45.5;--y:541.5;--w:379" href="https://wa.me/528116873612" data-wa="personalizado" target="_blank" rel="noopener" aria-label="Personalizado, 1 persona, desde $5,165 de honorarios. Lo quiero: escribir por WhatsApp"><img src="assets/img/servicios-ticket-personalizado.webp" alt="Ticket Personalizado: 1 persona. Un regalo pensado solo para esa persona: 2 propuestas; compras, envoltura en papel con moño, tarjeta y entrega; pídelo con 7 a 21 días de anticipación. Desde $5,165 de honorarios, regalos aparte."></a>
+      <a class="abs tk" style="--x:477.5;--y:542;--w:377" href="https://wa.me/528116873612" data-wa="grupal" target="_blank" rel="noopener" aria-label="Grupal, desde 2 regalos, $3,165 más 35%. Lo quiero: escribir por WhatsApp"><img src="assets/img/servicios-ticket-grupal.webp" alt="Ticket Grupal: desde 2 regalos, a la medida de tu grupo. 2 propuestas; compras, envoltura (hasta 10 regalos), tarjeta y entrega; pídelo con 14 a 30 días de anticipación. Honorarios: $3,165 más 35% de lo que gastes en regalos; regalos aparte; para presupuestos desde $5,800."></a>
+      <!-- [PENDIENTE: destino de "VER CATÁLOGO"] -->
+      <a class="abs tk" style="--x:909;--y:542;--w:376.5" href="#" data-pending="El catálogo de Sami's Picks estará disponible pronto" aria-label="Sami's Picks, desde 1 pieza. Ver catálogo"><img src="assets/img/servicios-ticket-sami-picks.webp" alt="Ticket Sami's Picks: desde 1 pieza. Ya los elegí por ti, listos para regalar: cajas de temporada y picks de todo el año; caja, tarjeta y entrega incluidas; con tu logo o por volumen desde 10 piezas. Precios en el catálogo, más IVA si requieres factura."></a>
+    </div>
+  </section>
+  <!-- ===== FIN: tickets ===== -->
+
+  <!-- ===== SECCIÓN: franja-1800 ===== -->
+  <section class="sec franja" aria-hidden="true">
+    <img src="assets/img/servicios-franja-1800.webp" alt="">
+  </section>
+  <!-- ===== FIN: franja-1800 ===== -->
+
+  <!-- ===== SECCIÓN: express ===== -->
+  <section class="sec express" id="express">
+    <div class="stage" style="--H:651">
+      <h2 class="abs titulo" style="--x:709;--y:151;--w:285"><img src="assets/img/servicios-express-titulo.webp" alt="express:"></h2>
+      <!-- PRECIO Express: está en el texto de abajo -->
+      <div class="abs t texto" style="--x:518;--y:249;--w:710;--fs:24">
+        <p class="mayus">Considéralo tu <i>primera y única</i> urgencia:</p>
+        <p>El próximo año yo te recuerdo la fecha antes (guiño guiño)<br>desde +$1,000 · se suma a tu servicio</p>
+        <p class="mayus"><i>sujeto a disponibilidad</i></p>
+      </div>
+      <a class="abs celular" style="--x:137;--y:50;--w:381" href="https://wa.me/528116873612" data-wa="express" target="_blank" rel="noopener" aria-label="Express, desde $1,000 adicionales. Escribir por WhatsApp"><img src="assets/img/servicios-express-celular.webp" alt="Celular rosa con la etiqueta Rush orders only: Need it ASAP? Say less."></a>
+    </div>
+    <div class="espacio"></div>
+  </section>
+  <!-- ===== FIN: express ===== -->
+
+</div>
+<!-- ===== FIN: revelado ===== -->
+</main>
+
+<!-- ===== SECCIÓN: footer (mismo bloque en las 4 páginas) ===== -->
+<footer class="sec footer" id="contacto">
+  <div class="stage">
+    <img class="abs f-cable" src="assets/img/footer-cable.webp" alt="" aria-hidden="true">
+    <p class="abs t f-titulo uno">CHECK IT OUT</p>
+    <!-- [PENDIENTE: documentos de Términos y condiciones y Aviso de privacidad] -->
+    <nav class="abs t uno" aria-label="Información">
+      <a href="#" data-pending="Los Términos y condiciones estarán disponibles pronto">Términos y condiciones</a>
+      <a href="#" data-pending="El Aviso de privacidad estará disponible pronto">Aviso de privacidad</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <p class="abs t f-titulo dos">SAY HELLO</p>
+    <!-- [PENDIENTE: Instagram y correo de Sami. El dato se pone en assets/js/main.js (CONTACTO)] -->
+    <!-- [PENDIENTE: horario de entregas. Falta el dato y decidir dónde se muestra] -->
+    <nav class="abs t dos" aria-label="Contacto">
+      <a href="https://wa.me/528116873612" data-wa="footer" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#" data-contacto="instagram" data-pending="El Instagram de Sami se agregará pronto">Instagram</a>
+      <a href="#" data-contacto="correo" data-pending="El correo de Sami se agregará pronto">Correo</a>
+    </nav>
+    <p class="abs t f-copy">© 2026 Gifted by Sami</p>
+    <a class="abs f-logo" href="index.html" aria-label="Gifted by Sami, ir a home"><img src="assets/img/footer-logo.webp" alt="Gifted by Sami"></a>
+  </div>
+</footer>
+<!-- ===== FIN: footer ===== -->
+
+<!-- ===== SECCIÓN: whatsapp-flotante (botón verde + aviso toast) ===== -->
+<a class="wa-float" href="https://wa.me/528116873612" data-wa="flotante" target="_blank" rel="noopener" aria-label="Escríbele a Sami por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C9.4 3 4 8.38 4 15.02c0 2.12.56 4.19 1.62 6.01L4 29l8.12-1.58a12.02 12.02 0 0 0 3.92.66C22.68 28.08 28 22.7 28 16.06 28 9.4 22.68 3 16.04 3Zm0 22.05c-1.2 0-2.38-.32-3.4-.93l-.24-.15-4.82.94.97-4.7-.16-.26a9.9 9.9 0 0 1-1.52-5.27c0-5.48 4.46-9.94 9.96-9.94 5.5 0 9.96 4.46 9.96 9.94 0 5.5-4.46 10.37-9.96 10.37Zm5.46-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<!-- ===== FIN: whatsapp-flotante ===== -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

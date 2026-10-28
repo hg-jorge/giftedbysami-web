@@ -1,6 +1,6 @@
 (function(){
   // ===================================================================
-  // DATOS DE CONTACTO: se cambian SOLO aquí y se aplican a toda la página
+  // DATOS DE CONTACTO: se cambian SOLO aquí y se aplican a todas las páginas
   // ===================================================================
   var CONTACTO = {
     whatsapp:  '528116873612', // 52 + número a 10 dígitos, sin espacios ni signos
@@ -8,13 +8,12 @@
     instagram: ''              // [PENDIENTE: enlace de Instagram de Sami] ej. 'https://instagram.com/usuario'
   };
 
-  // Mensaje que llega ya escrito en WhatsApp, uno por botón (atributo data-wa en index.html)
+  // Mensaje que llega ya escrito en WhatsApp, uno por botón (atributo data-wa en el HTML)
+  // [PENDIENTE: Jorge definirá el mensaje final de cada botón]
   var MENSAJES_WA = {
-    'hero':          'Hola Sami, vi tu página y me gustaría información', // "Cuéntame para quién es →"
-    'personalizado': 'Hola Sami, me interesa el servicio Personalizado',  // ticket Personalizado
-    'grupal':        'Hola Sami, me interesa el servicio Grupal',         // ticket Grupal
-    'sami-picks':    'Hola Sami, quiero ver los Sami\'s Picks del catálogo', // ticket Sami's Picks
-    'express':       'Hola Sami, me interesa el servicio Express',        // ticket Express (paracaídas)
+    'personalizado': 'Hola Sami, me interesa el servicio Personalizado',  // servicios: ticket Personalizado
+    'grupal':        'Hola Sami, me interesa el servicio Grupal',         // servicios: ticket Grupal
+    'express':       'Hola Sami, me interesa el servicio Express',        // servicios: celular rosa de express
     'footer':        'Hola Sami, vi tu página y me gustaría información', // pie de página "WhatsApp"
     'flotante':      'Hola Sami, vi tu página y me gustaría información'  // botón verde flotante
   };
@@ -25,47 +24,75 @@
   });
 
   // Correo e Instagram: si ya hay dato, el enlace se activa; si no, sigue mostrando el aviso "se agregará pronto"
-  var linkCorreo = document.querySelector('a[data-contacto="correo"]');
-  var linkInstagram = document.querySelector('a[data-contacto="instagram"]');
-  if (CONTACTO.correo && linkCorreo){
-    linkCorreo.href = 'mailto:' + CONTACTO.correo;
-    linkCorreo.classList.remove('pending');
-  }
-  if (CONTACTO.instagram && linkInstagram){
-    linkInstagram.href = CONTACTO.instagram;
-    linkInstagram.target = '_blank';
-    linkInstagram.rel = 'noopener';
-    linkInstagram.classList.remove('pending');
-  }
+  document.querySelectorAll('a[data-contacto="correo"]').forEach(function(a){
+    if (!CONTACTO.correo) return;
+    a.href = 'mailto:' + CONTACTO.correo;
+    a.removeAttribute('data-pending');
+  });
+  document.querySelectorAll('a[data-contacto="instagram"]').forEach(function(a){
+    if (!CONTACTO.instagram) return;
+    a.href = CONTACTO.instagram;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.removeAttribute('data-pending');
+  });
 
-  // Aviso para enlaces que todavía no tienen destino (Instagram y correo)
+  // Aviso para enlaces que todavía no tienen destino (data-pending="texto del aviso")
   var toast = document.getElementById('toast'), tt;
-  document.querySelectorAll('a.pending').forEach(function(a){
+  function aviso(texto){
+    toast.textContent = texto;
+    toast.classList.add('show');
+    clearTimeout(tt);
+    tt = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+  }
+  document.querySelectorAll('[data-pending]').forEach(function(a){
     a.addEventListener('click', function(e){
       e.preventDefault();
-      toast.textContent = a.getAttribute('data-pending') || 'Enlace próximamente';
-      toast.classList.add('show');
-      clearTimeout(tt);
-      tt = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+      aviso(a.getAttribute('data-pending') || 'Próximamente');
     });
   });
 
-  // Paracaídas en móvil: empieza centrado en el ticket Express
-  var cs = document.getElementById('chuteStage'), pan = document.getElementById('pan');
-  function placeChute(){ if (window.innerWidth < 820) cs.scrollLeft = pan.offsetWidth * 0.17; }
-  window.addEventListener('load', placeChute); placeChute();
+  // Submenú de "picks" (home): se abre y cierra con clic; se cierra al hacer clic fuera o con Esc
+  var botonPicks = document.getElementById('boton-picks');
+  var submenu = document.getElementById('submenu-picks');
+  if (botonPicks && submenu){
+    function cerrarSubmenu(){ submenu.hidden = true; botonPicks.setAttribute('aria-expanded', 'false'); }
+    botonPicks.addEventListener('click', function(e){
+      e.stopPropagation();
+      var abrir = submenu.hidden;
+      submenu.hidden = !abrir;
+      botonPicks.setAttribute('aria-expanded', String(abrir));
+    });
+    document.addEventListener('click', function(e){ if (!submenu.contains(e.target)) cerrarSubmenu(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') cerrarSubmenu(); });
+  }
 
-  // Galleta de la fortuna: se agita, se abre y baja suavemente a "pick your ticket"
-  var cookie = document.getElementById('cookie'), busy = false;
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  cookie.addEventListener('click', function(){
-    if (busy) return;
-    busy = true;
-    var target = document.querySelector('.hp') || document.getElementById('tickets');
-    if (reduce){ target.scrollIntoView({behavior:'auto', block:'start'}); busy = false; return; }
-    cookie.classList.add('shake');
-    setTimeout(function(){ cookie.classList.remove('shake'); cookie.classList.add('open'); }, 700);
-    setTimeout(function(){ target.scrollIntoView({behavior:'smooth', block:'start'}); }, 1500);
-    setTimeout(function(){ cookie.classList.remove('open'); busy = false; }, 3400);
-  });
+  // Galleta de la fortuna (servicios): al hacer clic se agita, se abre, aparece "revelado"
+  // y la página baja a "pick your ticket". No se guarda: al recargar, la galleta vuelve a cerrarse.
+  var galleta = document.getElementById('galleta');
+  var revelado = document.getElementById('revelado');
+  if (galleta && revelado){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var destino = document.getElementById('pick-your-ticket');
+    var ocupada = false;
+    function mostrar(){
+      revelado.hidden = false;
+      revelado.classList.add('aparece');
+      galleta.setAttribute('aria-expanded', 'true');
+    }
+    galleta.addEventListener('click', function(){
+      if (ocupada) return;
+      if (galleta.classList.contains('rota')){
+        destino.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+        return;
+      }
+      galleta.classList.add('rota');
+      if (reduce){ mostrar(); destino.scrollIntoView({behavior:'auto', block:'start'}); return; }
+      ocupada = true;
+      galleta.classList.add('shake');
+      setTimeout(function(){ galleta.classList.remove('shake'); galleta.classList.add('open'); }, 700);
+      setTimeout(function(){ mostrar(); destino.scrollIntoView({behavior:'smooth', block:'start'}); }, 1300);
+      setTimeout(function(){ galleta.classList.remove('open'); ocupada = false; }, 3000);
+    });
+  }
 })();

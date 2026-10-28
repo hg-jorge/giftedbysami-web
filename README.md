@@ -1,6 +1,6 @@
 # Gifted by Sami · sitio web
 
-Página de una sola sección larga (one-pager) para **Gifted by Sami**, servicio de asesoría y entrega de regalos en Monterrey.
+Sitio de 4 páginas (home, about, servicios y FAQ) para **Gifted by Sami**, servicio de asesoría y entrega de regalos en Monterrey. Es una réplica del diseño final en Canva.
 Proyecto de **HG Digital Strategy**.
 
 - Dirección final: **giftedbysami.com** (pendiente de conectar)
@@ -10,10 +10,14 @@ Proyecto de **HG Digital Strategy**.
 
 | Archivo / carpeta | Para qué sirve |
 |---|---|
-| `index.html` | La página. Está dividida en secciones marcadas con `SECCIÓN:` y `FIN:` |
-| `assets/css/styles.css` | Cómo se ve: colores, tamaños, posiciones |
-| `assets/js/main.js` | Lo que se mueve o reacciona (galleta, avisos). **Al inicio están el WhatsApp, el correo, el Instagram y los mensajes de cada botón** |
+| `index.html` | Página de inicio (home). Dividida en secciones marcadas con `SECCIÓN:` y `FIN:` |
+| `about.html` | Página "about" (conoce a Sami) |
+| `servicios.html` | Cómo funciona, la galleta, los tickets con precios y express |
+| `faq.html` | Preguntas frecuentes (solo se llega desde "FAQ" del pie de página) |
+| `assets/css/styles.css` | Cómo se ve: colores, tamaños, posiciones (compartido por las 4 páginas) |
+| `assets/js/main.js` | Lo que se mueve o reacciona (galleta, submenú, avisos). **Al inicio están el WhatsApp, el correo, el Instagram y los mensajes de cada botón** |
 | `assets/img/` | Todas las imágenes |
+| `assets/fonts/` | Tipografía Open Sauce Sans (licencia libre) |
 | `docs/DEPLOY.md` | Cómo publicar y cómo conectar el dominio |
 | `docs/PENDIENTES.md` | Datos y correcciones que faltan |
 | `docs/CAMBIOS.md` | Bitácora de cambios |

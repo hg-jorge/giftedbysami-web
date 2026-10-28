@@ -2,6 +2,16 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-10-28 · Rediseño según Canva final
+- **Sitio rehecho a partir del diseño final de Canva** ("Final Gifted by Sami website"): ahora son 4 páginas (`index.html`, `about.html`, `servicios.html`, `faq.html`) con el mismo pie de página. Respaldo previo: etiqueta `respaldo-antes-canva`.
+- **Home:** menú `home · about · servicios · picks`; "picks" abre un submenú (temporada, trending, all year; destinos pendientes).
+- **About:** nuevo acomodo y textos.
+- **Servicios:** nuevos textos; la galleta se mueve "queriendo romperse" y al hacer clic revela tickets, franja 1-800 y express (al recargar se vuelve a cerrar). Grupal ahora $3,165 + 35%. Express con celular rosa en lugar del paracaídas.
+- **FAQ:** página aparte, solo desde el pie de página; textos actualizados (se quitaron 3 preguntas que ya no están en Canva).
+- **Tipografías:** Open Sauce Sans (incluida en el sitio); Helvetica World y Avenir sustituidas por las del sistema.
+- **Correcciones de texto:** "fotografica" → "fotográfica"; "sólo" → "solo"; "(O sea la parte difícil)" → "(O sea, la parte difícil)"; "Términos y Condiciones completo" → "Términos y condiciones completos".
+- Verificado contra la exportación de Canva (escritorio) y revisado en celular (390 px).
+
 ## 2026-10-28
 - **Estructura del proyecto:** el HTML único (`gifted-by-samiv3.html`, 2.2 MB) se separó en `index.html` + `assets/css/styles.css` + `assets/js/main.js` + 44 imágenes en `assets/img/`. Sin cambios visuales (verificado con capturas en escritorio y celular).
 - **Organización interna:** secciones marcadas con `SECCIÓN:`/`FIN:` e id propio; CSS con los mismos nombres; colores repetidos pasados a variables en `:root`.

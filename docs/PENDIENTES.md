@@ -4,24 +4,27 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 
 ## Datos de Sami
 - [ ] **Correo de contacto** → `assets/js/main.js`, `CONTACTO.correo`. Hoy el enlace "Correo" del pie muestra "se agregará pronto".
-- [ ] **Instagram** → `assets/js/main.js`, `CONTACTO.instagram`. Hoy muestra "se agregará pronto". La FAQ también menciona su Instagram (fechas límite y fotos de regalos).
-- [ ] **Horario de entregas** → no aparece en la página. Falta el dato y decidir dónde va (pie de página, FAQ o cartelera).
-- [ ] **Términos y condiciones** y **Aviso de privacidad** → hoy los enlaces solo bajan a la FAQ (`index.html`, sección footer y última pregunta de la FAQ).
-- [ ] **Foto de Sami** (temporal) → reemplazar `assets/img/about-foto-sami.webp` con el mismo nombre.
+- [ ] **Instagram** → `assets/js/main.js`, `CONTACTO.instagram`. Hoy muestra "se agregará pronto". La FAQ también menciona su Instagram (fechas límite).
+- [ ] **Horario de entregas** → no aparece en el diseño. Falta el dato y decidir dónde va.
+- [ ] **Términos y condiciones** y **Aviso de privacidad** → hoy muestran "estarán disponibles pronto" (pie de página de las 4 páginas y último enlace de la FAQ). Se desarrollarán más adelante.
+- [ ] **Foto de Sami** (temporal) → reemplazar `assets/img/about-foto-sami.webp` con el mismo nombre (proporción 531 × 768).
 
 ## Definiciones de Jorge
-- [ ] **Mensajes de WhatsApp de cada botón** (7) → `assets/js/main.js`, `MENSAJES_WA`:
-  `hero`, `personalizado`, `grupal`, `sami-picks`, `express`, `footer`, `flotante`.
+- [ ] **Mensajes de WhatsApp de cada botón** → `assets/js/main.js`, `MENSAJES_WA`:
+  `personalizado`, `grupal`, `express` (celular rosa), `footer`, `flotante`.
+- [ ] **Submenú "picks"** (home): destino de `temporada`, `trending` y `all year`. Hoy muestran "estarán disponibles pronto".
+- [ ] **"VER CATÁLOGO"** (ticket Sami's Picks): destino. Hoy muestra "estará disponible pronto".
 - [ ] **Favicon** → Jorge lo tiene; va en `assets/img/` (se conecta en Fase 3).
 
 ## Precios (se publican así por ahora; cambiarán)
-El precio visible está **dentro de las imágenes**; además está en texto en `index.html` (aria-label y alt):
-| Servicio | Precio hoy | Imagen | En index.html |
-|---|---|---|---|
-| Personalizado | desde $5,165 | `ticket-personalizado.webp` | `data-wa="personalizado"` (aria-label + alt) |
-| Grupal | $5,165 + 35% | `ticket-grupal.webp` | `data-wa="grupal"` (aria-label + alt) |
-| Sami's Picks | precios en catálogo | `ticket-sami-picks.webp` | `data-wa="sami-picks"` |
-| Express | desde +$1,000 | `express-paracaidas.webp` | `data-wa="express"` (aria-label) + alt de la imagen |
+| Servicio | Precio hoy | Dónde vive |
+|---|---|---|
+| Personalizado | desde $5,165 | imagen `servicios-ticket-personalizado.webp` + aria-label/alt en `servicios.html` |
+| Grupal | $3,165 + 35% (presupuestos desde $5,800) | imagen `servicios-ticket-grupal.webp` + aria-label/alt |
+| Sami's Picks | precios en catálogo, + IVA con factura | imagen `servicios-ticket-sami-picks.webp` + aria-label/alt |
+| Express | desde +$1,000 | texto en `servicios.html`, sección express + aria-label del celular |
+
+Para cambiar un precio de ticket: se edita en Canva, se exporta y se recorta la imagen nueva.
 
 ## Publicación
 - [ ] Fase 3: revisión ligera (title, description, favicon, Open Graph, alt, celular, WhatsApp).
