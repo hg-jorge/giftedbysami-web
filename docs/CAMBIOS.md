@@ -3,6 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-28 · Ajustes
+- **Head (4 páginas):** vista previa al compartir en WhatsApp/Facebook (título, descripción e imagen `og-imagen.jpg` 1200×630). Dirección provisional de GitHub; cambiar al conectar el dominio.
 - **Head (4 páginas):** favicon con el logo negro sobre fondo crema (pestaña, iPhone y Android). Original guardado en `../respaldo-original/`.
 - **Hero (home):** el logo pasa a ser el título principal (h1) que lee Google; "Let me guess..." pasa a h2. Sin cambio visual.
 - **Head (4 páginas):** descripciones para Google con zonas de entrega y Monterrey.
