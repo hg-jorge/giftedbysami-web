@@ -226,7 +226,7 @@ body.con-barra{padding-top:var(--alto-barra)}
   .notas .stage{padding:0 16px}
   .notas .tarjeta-fondo{display:none}
   .notas .tarjeta{position:relative;width:100%;max-width:460px;margin:0 auto;padding:20px 22px 34px;background:var(--crema);border-radius:12px 12px 0 0;display:flex;flex-direction:column}
-  .notas .barra{display:flex;align-items:center;gap:6px;margin-bottom:22px}
+  .notas .barra{display:flex;align-items:center;gap:6px;margin-bottom:22px;position:static;height:auto;padding:0;justify-content:flex-start;background:none;border:0;z-index:auto} /* anula los estilos de la barra de menú (#barra), que comparte la clase */
   .notas .atras{width:9px}
   .notas .rotulo{--fm:20;margin-right:auto}
   .notas .compartir{width:20px;margin-right:16px}

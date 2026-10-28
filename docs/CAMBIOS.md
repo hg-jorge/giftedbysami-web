@@ -2,6 +2,9 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-10-28 · Corrección celular
+- **Notas (home, celular):** "Let me guess..." no se veía porque la fila de "Notes" heredaba los estilos de la barra de menú (comparten la clase `barra`). Se anulan solo en esa fila. Escritorio sin cambios.
+
 ## 2026-10-28 · Publicación
 - **Sitio publicado** en GitHub Pages: https://hg-jorge.github.io/giftedbysami-web/ (rama `main`, carpeta raíz).
 
