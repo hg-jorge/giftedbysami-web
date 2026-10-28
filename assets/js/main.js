@@ -4,7 +4,7 @@
   // ===================================================================
   var CONTACTO = {
     whatsapp:  '528116873612', // 52 + número a 10 dígitos, sin espacios ni signos
-    correo:    '',             // [PENDIENTE: correo de contacto de Sami] ej. 'hola@giftedbysami.com'
+    correo:    'sami@giftedbysami.com',
     instagram: 'https://www.instagram.com/giftedbysami/'
   };
 

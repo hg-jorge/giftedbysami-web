@@ -3,7 +3,7 @@
 Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con `[PENDIENTE: …]`.
 
 ## Datos de Sami
-- [ ] **Correo de contacto** → `assets/js/main.js`, `CONTACTO.correo`. Hoy el enlace "Correo" del pie muestra "se agregará pronto".
+- [x] **Correo de contacto** → `sami@giftedbysami.com` en `assets/js/main.js`, `CONTACTO.correo` (2026-10-28).
 - [x] **Instagram** → `https://www.instagram.com/giftedbysami/` en `assets/js/main.js`, `CONTACTO.instagram` (2026-10-28).
 - [ ] **Horario de entregas** → no aparece en el diseño. Falta el dato y decidir dónde va.
 - [ ] **Términos y condiciones** y **Aviso de privacidad** → hoy muestran "estarán disponibles pronto" (pie de página de las 4 páginas y último enlace de la FAQ). Se desarrollarán más adelante.
