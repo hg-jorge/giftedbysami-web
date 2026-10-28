@@ -30,4 +30,4 @@ Para cambiar un precio de ticket: se edita en Canva, se exporta y se recorta la 
 - [x] Fase 3: revisión ligera (títulos, descripciones, favicon, vista previa, h1, letra del menú, carga diferida, 404).
 - [x] Al conectar el dominio: `og:url` y `og:image` de las 4 páginas ya apuntan a `https://giftedbysami.com/`.
 - [x] Fase 4-5: publicado en https://hg-jorge.github.io/giftedbysami-web/ (2026-10-28, etiqueta `v1-publicada`).
-- [ ] Fase 6: conectar `giftedbysami.com` + HTTPS.
+- [x] Fase 6: `giftedbysami.com` conectado con HTTPS (2026-10-28; certificado de GitHub, se renueva solo). `www` redirige al dominio sin www.
