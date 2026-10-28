@@ -1,0 +1,17 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración local de editores
+.vscode/
+.idea/
+
+# Nunca subir claves ni secretos
+.env
+.env.*
+*.pem
+*.key
+
+# Temporales
+*.log
+*.tmp
