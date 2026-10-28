@@ -6,7 +6,7 @@
 - Esta carpeta sube cambios con la sesión **activa** de la herramienta `gh` (configurado solo en este proyecto). En la Mac también existe la cuenta `jgsai04`: si un `git push` dice "Permission denied to jgsai04", correr `gh auth switch -u hg-jorge` y repetir.
 - Repositorio: `giftedbysami-web` (público)
 - GitHub Pages: rama `main`, carpeta `/ (root)`
-- URL temporal: https://hg-jorge.github.io/giftedbysami-web/
+- Dirección: https://giftedbysami.com (archivo `CNAME` en la raíz; no borrarlo). La vieja https://hg-jorge.github.io/giftedbysami-web/ redirige ahí.
 - Dominio final: `giftedbysami.com`, registrado en **Squarespace** (correo de Sami en Google Workspace, **no tocar MX/TXT**)
 
 ## 1. Publicar un cambio (día a día)
@@ -25,7 +25,9 @@ Para ver si ya terminó: en GitHub, pestaña **Actions** del repo; el último "p
 4. **Branch**: `main` y carpeta `/ (root)` → **Save**.
 5. En 1-2 minutos aparece arriba "Your site is live at …".
 
-## 3. Conectar giftedbysami.com (cuando Sami dé acceso)
+## 3. Conectar giftedbysami.com (hecho el 2026-10-28)
+Registros en Squarespace (Domains → giftedbysami.com → DNS): se borró el grupo "Squarespace Defaults" y en **Custom records** se agregaron A (@) ×4, AAAA (@) ×4, CNAME `www` → `hg-jorge.github.io` y el TXT `_github-pages-challenge-hg-jorge` (verificación de GitHub, **no borrarlo**). Los de Google Workspace (MX, SPF, DKIM) no se tocaron.
+
 > Los registros exactos se toman de la documentación oficial de GitHub **en el momento de hacerlo**
 > (docs.github.com → "Managing a custom domain for your GitHub Pages site"). No se copian de memoria.
 

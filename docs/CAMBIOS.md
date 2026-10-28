@@ -2,6 +2,10 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-10-28 · Dominio
+- **giftedbysami.com:** se agrega el archivo `CNAME` para que GitHub Pages sirva el sitio en el dominio propio.
+- **Head (4 páginas):** la vista previa al compartir (`og:url`, `og:image`) ahora usa https://giftedbysami.com/.
+
 ## 2026-10-28 · Corrección celular
 - **Notas (home, celular):** "Let me guess..." no se veía porque la fila de "Notes" heredaba los estilos de la barra de menú (comparten la clase `barra`). Se anulan solo en esa fila. Escritorio sin cambios.
 

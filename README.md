@@ -3,8 +3,7 @@
 Sitio de 4 páginas (home, about, servicios y FAQ) para **Gifted by Sami**, servicio de asesoría y entrega de regalos en Monterrey. Es una réplica del diseño final en Canva.
 Proyecto de **HG Digital Strategy**.
 
-- Dirección final: **giftedbysami.com** (pendiente de conectar)
-- Dirección temporal (GitHub Pages): **https://hg-jorge.github.io/giftedbysami-web/**
+- Dirección: **https://giftedbysami.com** (GitHub Pages; la dirección vieja https://hg-jorge.github.io/giftedbysami-web/ redirige aquí)
 
 ## ¿Qué hay en esta carpeta?
 
