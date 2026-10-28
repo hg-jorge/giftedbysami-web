@@ -3,6 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-28 · Ajustes
+- **Hero (home):** el logo pasa a ser el título principal (h1) que lee Google; "Let me guess..." pasa a h2. Sin cambio visual.
 - **Head (4 páginas):** descripciones para Google con zonas de entrega y Monterrey.
 - **Head (4 páginas):** títulos de pestaña con servicio y Monterrey (para Google).
 - **Head (about, servicios, FAQ):** se carga Nunito Sans, sustituto de Avenir en Windows/Android, igual que en home.
