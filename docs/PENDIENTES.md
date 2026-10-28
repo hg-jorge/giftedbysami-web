@@ -12,7 +12,7 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 ## Definiciones de Jorge
 - [ ] **Mensajes de WhatsApp de cada botón** → `assets/js/main.js`, `MENSAJES_WA`:
   `personalizado`, `grupal`, `express` (celular rosa), `footer`, `flotante`.
-- [ ] **Submenú "picks"** (home): destino de `temporada`, `trending` y `all year`. Hoy muestran "estarán disponibles pronto".
+- [ ] **Submenú "picks"** (home y barra de menú): destino de `temporada`, `trending` y `all year`. Hoy muestran "estarán disponibles pronto".
 - [ ] **"VER CATÁLOGO"** (ticket Sami's Picks): destino. Hoy muestra "estará disponible pronto".
 - [ ] **Favicon** → Jorge lo tiene; va en `assets/img/` (se conecta en Fase 3).
 

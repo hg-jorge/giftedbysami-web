@@ -96,6 +96,47 @@
     });
   }
 
+  // Barra fija de arriba: botón ☰ (celular), submenú de picks y, en home, aparece al bajar
+  var barra = document.getElementById('barra');
+  if (barra){
+    var botonMenu = barra.querySelector('.barra-boton');
+    var menu = document.getElementById('barra-menu');
+    var botonPicksBarra = barra.querySelector('.barra-picks-boton');
+    var submenuBarra = document.getElementById('barra-submenu');
+    function cerrarMenu(){
+      menu.classList.remove('abierto');
+      botonMenu.setAttribute('aria-expanded', 'false');
+      botonMenu.setAttribute('aria-label', 'Abrir menú');
+    }
+    function cerrarSubmenuBarra(){ submenuBarra.hidden = true; botonPicksBarra.setAttribute('aria-expanded', 'false'); }
+    botonMenu.addEventListener('click', function(){
+      var abrir = !menu.classList.contains('abierto');
+      menu.classList.toggle('abierto', abrir);
+      botonMenu.setAttribute('aria-expanded', String(abrir));
+      botonMenu.setAttribute('aria-label', abrir ? 'Cerrar menú' : 'Abrir menú');
+      if (!abrir) cerrarSubmenuBarra();
+    });
+    botonPicksBarra.addEventListener('click', function(){
+      var abrir = submenuBarra.hidden;
+      submenuBarra.hidden = !abrir;
+      botonPicksBarra.setAttribute('aria-expanded', String(abrir));
+    });
+    document.addEventListener('click', function(e){ if (!barra.contains(e.target)){ cerrarSubmenuBarra(); cerrarMenu(); } });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape'){ cerrarSubmenuBarra(); cerrarMenu(); } });
+
+    // En home: la barra aparece cuando los botones grandes del inicio ya quedaron arriba, fuera de la vista
+    var referencia = barra.classList.contains('barra--home') && document.getElementById('boton-picks');
+    if (referencia){
+      var revisar = function(){
+        var pasada = referencia.getBoundingClientRect().bottom < 0;
+        barra.classList.toggle('visible', pasada);
+        if (!pasada){ cerrarSubmenuBarra(); cerrarMenu(); }
+      };
+      window.addEventListener('scroll', revisar, {passive: true});
+      revisar();
+    }
+  }
+
   // Transición al cambiar de página: la página actual se desvanece y luego se navega.
   // La entrada de la nueva página la hace el CSS (sección "transiciones").
   var sinMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

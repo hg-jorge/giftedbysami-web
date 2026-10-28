@@ -7,7 +7,28 @@
 <meta name="description" content="Hola, soy Sam: mamá emprendedora, creativa y muy detallista. Me encargo de que quien quieres se sienta pensado.">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="con-barra">
+
+<!-- ===== SECCIÓN: barra (menú fijo arriba; mismo bloque en las 4 páginas) ===== -->
+<header class="barra" id="barra">
+  <a class="barra-logo" href="index.html" aria-label="Gifted by Sami, ir a home"><img src="assets/img/barra-logo.webp" alt="Gifted by Sami"></a>
+  <button class="barra-boton" type="button" aria-expanded="false" aria-controls="barra-menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <nav class="barra-menu" id="barra-menu" aria-label="Menú">
+    <a href="index.html">home</a>
+    <a href="about.html" aria-current="page">about</a>
+    <a href="servicios.html">servicios</a>
+    <div class="barra-picks">
+      <button class="barra-picks-boton" type="button" aria-expanded="false" aria-controls="barra-submenu">picks <span aria-hidden="true">▾</span></button>
+      <!-- [PENDIENTE: destino de temporada, trending y all year] -->
+      <div class="barra-submenu" id="barra-submenu" hidden>
+        <a href="#" data-pending="Los picks de temporada estarán disponibles pronto">temporada</a>
+        <a href="#" data-pending="Los picks trending estarán disponibles pronto">trending</a>
+        <a href="#" data-pending="Los picks all year estarán disponibles pronto">all year</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- ===== FIN: barra ===== -->
 
 <!-- ===== SECCIÓN: about ===== -->
 <main class="sec about" id="about">

@@ -25,7 +25,8 @@ Secciones por página (sección → id → clase CSS):
 - **about.html:** about → `#about` → `.about` · footer
 - **servicios.html:** como-funciona → `#como-funciona` → `.como` (galleta) · revelado → `#revelado` (oculto hasta romper la galleta) que contiene tickets → `#tickets`, franja-1800 → `.franja`, express → `#express` · footer
 - **faq.html:** faq → `#faq` → `.faq` · footer
-- En todas: footer → `#contacto` → `.footer`, whatsapp-flotante → `.wa-float` + `.toast`
+- En todas: barra → `#barra` → `.barra` (menú fijo arriba, siempre visible; en home aparece al bajar con `.barra--home`), footer → `#contacto` → `.footer`, whatsapp-flotante → `.wa-float` + `.toast`
+- **La barra y el pie de página están repetidos en las 4 páginas.** Un cambio en cualquiera de los dos = editar los 4 archivos igual (en la barra solo cambia `aria-current="page"` según la página).
 
 Notas técnicas:
 - Cada sección es un "escenario" (`.stage`, ancho Canva 1366) con coordenadas de Canva: `--H` alto de la sección, `--x/--y/--w` posición de cada elemento, `--fs` tamaño de letra de Canva, `--k` escala. En celular, `--fm` es el tamaño de letra en px y `--mx/--my/--mw` (en %) acomodan los stickers de no-worries.
