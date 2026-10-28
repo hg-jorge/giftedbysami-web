@@ -2,6 +2,9 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-10-28 · Ajustes
+- **Footer (4 páginas):** el enlace "Instagram" ahora abre https://www.instagram.com/giftedbysami/ (dato en `main.js`, `CONTACTO`).
+
 ## 2026-10-28 · Rediseño según Canva final
 - **Sitio rehecho a partir del diseño final de Canva** ("Final Gifted by Sami website"): ahora son 4 páginas (`index.html`, `about.html`, `servicios.html`, `faq.html`) con el mismo pie de página. Respaldo previo: etiqueta `respaldo-antes-canva`.
 - **Home:** menú `home · about · servicios · picks`; "picks" abre un submenú (temporada, trending, all year; destinos pendientes).

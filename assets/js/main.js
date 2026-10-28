@@ -5,7 +5,7 @@
   var CONTACTO = {
     whatsapp:  '528116873612', // 52 + número a 10 dígitos, sin espacios ni signos
     correo:    '',             // [PENDIENTE: correo de contacto de Sami] ej. 'hola@giftedbysami.com'
-    instagram: ''              // [PENDIENTE: enlace de Instagram de Sami] ej. 'https://instagram.com/usuario'
+    instagram: 'https://www.instagram.com/giftedbysami/'
   };
 
   // Mensaje que llega ya escrito en WhatsApp, uno por botón (atributo data-wa en el HTML)

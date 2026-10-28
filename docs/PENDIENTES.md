@@ -4,7 +4,7 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 
 ## Datos de Sami
 - [ ] **Correo de contacto** → `assets/js/main.js`, `CONTACTO.correo`. Hoy el enlace "Correo" del pie muestra "se agregará pronto".
-- [ ] **Instagram** → `assets/js/main.js`, `CONTACTO.instagram`. Hoy muestra "se agregará pronto". La FAQ también menciona su Instagram (fechas límite).
+- [x] **Instagram** → `https://www.instagram.com/giftedbysami/` en `assets/js/main.js`, `CONTACTO.instagram` (2026-10-28).
 - [ ] **Horario de entregas** → no aparece en el diseño. Falta el dato y decidir dónde va.
 - [ ] **Términos y condiciones** y **Aviso de privacidad** → hoy muestran "estarán disponibles pronto" (pie de página de las 4 páginas y último enlace de la FAQ). Se desarrollarán más adelante.
 - [ ] **Foto de Sami** (temporal) → reemplazar `assets/img/about-foto-sami.webp` con el mismo nombre (proporción 531 × 768).
