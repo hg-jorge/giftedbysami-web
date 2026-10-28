@@ -3,6 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-28 · Ajustes
+- **Cartelera (home):** imagen de "Zonas de entrega" reemplazada por la versión de alta calidad que entregó Jorge (`home-cartelera.webp`, 2732 px de ancho).
 - **Barra de menú (todas las páginas):** barra fija arriba, clara y minimalista (fondo crema, línea fina, logo negro, home · about · servicios · picks▾ con la página actual subrayada). Siempre visible en about, servicios y FAQ; en home aparece al bajar más allá de los botones grandes. En celular: logo + botón ☰.
 - **Transiciones (todas las páginas):** al hacer clic en home, about o servicios la página se desvanece y la nueva entra con un deslizamiento suave; el submenú de picks se despliega con animación. Sin animación si el usuario tiene "reducir movimiento". Servicios: lo revelado por la galleta ahora aparece solo con desvanecido, para que "pick your ticket" quede justo arriba.
 - **Footer (4 páginas):** el enlace "Instagram" ahora abre https://www.instagram.com/giftedbysami/ (dato en `main.js`, `CONTACTO`).
