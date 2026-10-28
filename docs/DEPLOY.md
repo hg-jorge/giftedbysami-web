@@ -2,6 +2,8 @@
 
 ## Datos
 - Cuenta de GitHub: `hg-jorge`
+- Repositorio en línea: https://github.com/hg-jorge/giftedbysami-web
+- Esta carpeta sube cambios con la sesión **activa** de la herramienta `gh` (configurado solo en este proyecto). En la Mac también existe la cuenta `jgsai04`: si un `git push` dice "Permission denied to jgsai04", correr `gh auth switch -u hg-jorge` y repetir.
 - Repositorio: `giftedbysami-web` (público)
 - GitHub Pages: rama `main`, carpeta `/ (root)`
 - URL temporal: https://hg-jorge.github.io/giftedbysami-web/
