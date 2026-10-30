@@ -11,7 +11,7 @@
 ## Mapa del proyecto
 | Qué | Dónde |
 |---|---|
-| Páginas | `index.html` (home), `about.html`, `servicios.html`, `faq.html` (solo se llega desde "FAQ" del pie). Cada una dividida en `<!-- ===== SECCIÓN: x ===== -->` … `<!-- ===== FIN: x ===== -->` |
+| Páginas | `index.html` (home), `about.html`, `servicios.html`, `faq.html` (solo se llega desde "FAQ" del pie), `terminos.html` y `privacidad.html` (desde el pie y la FAQ; texto corrido, no son de Canva). Cada una dividida en `<!-- ===== SECCIÓN: x ===== -->` … `<!-- ===== FIN: x ===== -->` |
 | Estilos (compartidos) | `assets/css/styles.css`, mismos nombres de sección (`/* ===== SECCIÓN: x ===== */`; celular en `/* móvil · x */` dentro de `@media (max-width:819px)`) |
 | Colores y tipografías | variables en `:root` al inicio de `styles.css` |
 | Tipografías | Open Sauce Sans (archivos en `assets/fonts`, licencia libre OFL). Helvetica World y Avenir (de pago) se sustituyen por las del sistema: Helvetica/Arial y Avenir/Nunito Sans |
@@ -25,12 +25,13 @@ Secciones por página (sección → id → clase CSS):
 - **about.html:** about → `#about` → `.about` · footer
 - **servicios.html:** como-funciona → `#como-funciona` → `.como` (galleta) · revelado → `#revelado` (oculto hasta romper la galleta) que contiene tickets → `#tickets`, franja-1800 → `.franja`, express → `#express` · footer
 - **faq.html:** faq → `#faq` → `.faq` · footer
+- **terminos.html / privacidad.html:** legal → `#terminos` / `#privacidad` → `.legal` (columna `.legal-doc`) · footer
 - En todas: barra → `#barra` → `.barra` (menú fijo arriba, siempre visible; en home aparece al bajar con `.barra--home`), footer → `#contacto` → `.footer`, whatsapp-flotante → `.wa-float` + `.toast`
-- **La barra y el pie de página están repetidos en las 4 páginas.** Un cambio en cualquiera de los dos = editar los 4 archivos igual (en la barra solo cambia `aria-current="page"` según la página).
+- **La barra y el pie de página están repetidos en las 6 páginas.** Un cambio en cualquiera de los dos = editar los 6 archivos igual (en la barra solo cambia `aria-current="page"` según la página).
 
 Notas técnicas:
 - Cada sección es un "escenario" (`.stage`, ancho Canva 1366) con coordenadas de Canva: `--H` alto de la sección, `--x/--y/--w` posición de cada elemento, `--fs` tamaño de letra de Canva, `--k` escala. En celular, `--fm` es el tamaño de letra en px y `--mx/--my/--mw` (en %) acomodan los stickers de no-worries.
-- **El pie de página está repetido en las 4 páginas** (mismo HTML; posiciones en el CSS). Un cambio en el pie = editar los 4 archivos igual.
+- **El pie de página está repetido en las 6 páginas** (mismo HTML; posiciones en el CSS). Un cambio en el pie = editar los 6 archivos igual.
 - Los botones de WhatsApp tienen `data-wa="clave"`; `main.js` arma el enlace con `CONTACTO.whatsapp` + `MENSAJES_WA[clave]`. El `href` del HTML es solo respaldo (número sin mensaje).
 - **Precios:** los de Personalizado, Grupal y Sami's Picks están DENTRO de las imágenes `servicios-ticket-*.webp` (además en `aria-label` y `alt`). El de Express está en texto en `servicios.html`. Cambiar un precio de ticket = nueva imagen desde Canva + aria-label + alt.
 - **Galleta:** no se guarda su estado; al recargar `servicios.html` vuelve a cerrarse (pedido de Jorge).

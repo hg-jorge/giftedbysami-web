@@ -13,6 +13,7 @@ Proyecto de **HG Digital Strategy**.
 | `about.html` | Página "about" (conoce a Sami) |
 | `servicios.html` | Cómo funciona, la galleta, los tickets con precios y express |
 | `faq.html` | Preguntas frecuentes (solo se llega desde "FAQ" del pie de página) |
+| `terminos.html`, `privacidad.html` | Términos y condiciones y Aviso de privacidad (desde el pie de página y la FAQ) |
 | `assets/css/styles.css` | Cómo se ve: colores, tamaños, posiciones (compartido por las 4 páginas) |
 | `assets/js/main.js` | Lo que se mueve o reacciona (galleta, submenú, avisos). **Al inicio están el WhatsApp, el correo, el Instagram y los mensajes de cada botón** |
 | `assets/img/` | Todas las imágenes |
