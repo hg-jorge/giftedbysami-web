@@ -3,6 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-30 · Fase 7 (observaciones de Sami)
+- **Galleta (servicios, celular):** al romperla, la página baja a la galleta rota (queda arriba, ya abierta) y debajo aparece lo demás, en lugar de bajar directo a "pick your ticket". Escritorio sin cambios.
 - **About (celular):** la frase "Tú sigues haciendo lo que mejor sabes hacer…" y "i got u" ahora van debajo de la insignia "Gifting just got easier". Escritorio sin cambios.
 
 ## 2026-10-28 · Dominio

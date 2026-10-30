@@ -69,11 +69,13 @@
 
   // Galleta de la fortuna (servicios): al hacer clic se agita, se abre, aparece "revelado"
   // y la página baja a "pick your ticket". No se guarda: al recargar, la galleta vuelve a cerrarse.
+  // En celular baja a la galleta (que se queda rota) para que se entienda el efecto, y abajo sigue lo demás.
   var galleta = document.getElementById('galleta');
   var revelado = document.getElementById('revelado');
   if (galleta && revelado){
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var destino = document.getElementById('pick-your-ticket');
+    var celular = window.matchMedia('(max-width: 819px)').matches;
+    var destino = celular ? galleta : document.getElementById('pick-your-ticket');
     var ocupada = false;
     function mostrar(){
       revelado.hidden = false;
@@ -92,7 +94,7 @@
       galleta.classList.add('shake');
       setTimeout(function(){ galleta.classList.remove('shake'); galleta.classList.add('open'); }, 700);
       setTimeout(function(){ mostrar(); destino.scrollIntoView({behavior:'smooth', block:'start'}); }, 1300);
-      setTimeout(function(){ galleta.classList.remove('open'); ocupada = false; }, 3000);
+      setTimeout(function(){ if (!celular) galleta.classList.remove('open'); ocupada = false; }, 3000);
     });
   }
 

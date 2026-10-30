@@ -203,6 +203,7 @@ body.con-barra{padding-top:var(--alto-barra)}
 .barra-submenu a:hover{background:rgba(0,0,0,.05)}
 .barra-boton{display:none}
 #pick-your-ticket{scroll-margin-top:calc(var(--alto-barra) + 8px)}
+#galleta{scroll-margin-top:calc(var(--alto-barra) + 16px)}
 
 /* =====================================================================
    CELULAR (menos de 820 px): una sola columna, primero la información
