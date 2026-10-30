@@ -219,7 +219,7 @@ body.con-barra{padding-top:var(--alto-barra)}
 .barra-submenu a:hover{background:rgba(0,0,0,.05)}
 .barra-boton{display:none}
 #pick-your-ticket{scroll-margin-top:calc(var(--alto-barra) + 8px)}
-#galleta{scroll-margin-top:calc(var(--alto-barra) + 16px)}
+#tickets .abierta{scroll-margin-top:calc(var(--alto-barra) + 16px)}
 
 /* =====================================================================
    CELULAR (menos de 820 px): una sola columna, primero la información
@@ -273,7 +273,7 @@ body.con-barra{padding-top:var(--alto-barra)}
   .como .stage{padding:36px 20px 30px}
   .como .titulo{width:78%;margin-bottom:24px}
   .como .pasos{--fm:17;margin-bottom:10px}
-  .galleta{position:relative;width:72%;align-self:center;margin:14px 0 26px}
+  .galleta{position:relative;width:72%;align-self:center;margin:26px 0 10px;order:1}   /* order: abajo de "¿Prefieres algo ya listo?" */
   .como .listo{--fm:17;margin-bottom:16px}
   .como .prefieres{--fm:16;text-align:left}
 

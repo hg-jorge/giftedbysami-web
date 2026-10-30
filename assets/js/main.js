@@ -69,15 +69,17 @@
 
   // Galleta de la fortuna (servicios): al hacer clic se agita, se abre, aparece "revelado"
   // y la página baja a "pick your ticket". No se guarda: al recargar, la galleta vuelve a cerrarse.
-  // En celular baja a la galleta (que se queda rota) para que se entienda el efecto, y abajo sigue lo demás.
+  // En celular la galleta cerrada (abajo del texto) desaparece al abrirse y en su lugar queda la galleta rota
+  // del inicio de los tickets; la página baja a esa galleta rota para que se entienda el efecto.
   var galleta = document.getElementById('galleta');
   var revelado = document.getElementById('revelado');
   if (galleta && revelado){
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var celular = window.matchMedia('(max-width: 819px)').matches;
-    var destino = celular ? galleta : document.getElementById('pick-your-ticket');
+    var destino = celular ? document.querySelector('#tickets .abierta') : document.getElementById('pick-your-ticket');
     var ocupada = false;
     function mostrar(){
+      if (celular) galleta.hidden = true;
       revelado.hidden = false;
       revelado.classList.add('aparece');
       galleta.setAttribute('aria-expanded', 'true');
@@ -94,7 +96,7 @@
       galleta.classList.add('shake');
       setTimeout(function(){ galleta.classList.remove('shake'); galleta.classList.add('open'); }, 700);
       setTimeout(function(){ mostrar(); destino.scrollIntoView({behavior:'smooth', block:'start'}); }, 1300);
-      setTimeout(function(){ if (!celular) galleta.classList.remove('open'); ocupada = false; }, 3000);
+      setTimeout(function(){ galleta.classList.remove('open'); ocupada = false; }, 3000);
     });
   }
 
