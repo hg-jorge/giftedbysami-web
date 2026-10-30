@@ -81,7 +81,7 @@
     function mostrar(){
       if (celular) galleta.hidden = true;
       revelado.hidden = false;
-      revelado.classList.add('aparece');
+      if (!celular) revelado.classList.add('aparece');  // en celular sin desvanecido: la galleta rota toma el lugar de la animada sin dejar hueco blanco
       galleta.setAttribute('aria-expanded', 'true');
     }
     galleta.addEventListener('click', function(){
