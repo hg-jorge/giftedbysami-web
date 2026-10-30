@@ -5,7 +5,7 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 ## Datos de Sami
 - [x] **Correo de contacto** → `sami@giftedbysami.com` en `assets/js/main.js`, `CONTACTO.correo` (2026-10-28).
 - [x] **Instagram** → `https://www.instagram.com/giftedbysami/` en `assets/js/main.js`, `CONTACTO.instagram` (2026-10-28).
-- [ ] **Horario de entregas** → no aparece en el diseño. Falta el dato y decidir dónde va. En `terminos.html` (punto 10. Entregas) dice "de [__ a __] hrs" hasta tener el dato.
+- [x] **Horario de entregas** → no hay horario fijo: se acuerda al contratar (así lo dice `terminos.html`, punto 10).
 - [x] **Términos y condiciones** y **Aviso de privacidad** → publicados en `terminos.html` y `privacidad.html` (2026-10-30), enlazados desde el pie y la FAQ.
 - [ ] **Foto de Sami** (temporal) → reemplazar `assets/img/about-foto-sami.webp` con el mismo nombre (proporción 531 × 768).
 

@@ -3,7 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-30 · Fase 7 (observaciones de Sami)
-- **Términos y condiciones y Aviso de privacidad:** páginas nuevas `terminos.html` y `privacidad.html` con los textos que entregó Sami (columna de lectura, misma barra y pie). Correcciones de dedo: "sólo" → "solo", "enviandome" → "enviándome", "811687 3612" → "81 1687 3612"; "[correo de contacto]" → sami@giftedbysami.com; "[Aviso de privacidad]" → enlace. El horario de entregas sigue como "[__ a __] hrs" hasta tener el dato.
+- **Términos y condiciones y Aviso de privacidad:** páginas nuevas `terminos.html` y `privacidad.html` con los textos que entregó Sami (columna de lectura, misma barra y pie). Correcciones de dedo: "sólo" → "solo", "enviandome" → "enviándome", "811687 3612" → "81 1687 3612"; "[correo de contacto]" → sami@giftedbysami.com; "[Aviso de privacidad]" → enlace. Horario de entregas: "de [__ a __] hrs" → "en el horario que acordemos al contratar" (no hay horario fijo).
 - **Footer (todas las páginas) y FAQ:** los enlaces "Términos y condiciones" y "Aviso de privacidad" ya abren sus páginas (antes decían "estarán disponibles pronto").
 - **Galleta (servicios, celular):** al romperla, la página baja a la galleta rota (queda arriba, ya abierta) y debajo aparece lo demás, en lugar de bajar directo a "pick your ticket". Escritorio sin cambios.
 - **About (celular):** la frase "Tú sigues haciendo lo que mejor sabes hacer…" y "i got u" ahora van debajo de la insignia "Gifting just got easier". Escritorio sin cambios.
