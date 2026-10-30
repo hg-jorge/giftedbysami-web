@@ -2,6 +2,9 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-10-30 · Fase 7 (observaciones de Sami)
+- **About (celular):** la frase "Tú sigues haciendo lo que mejor sabes hacer…" y "i got u" ahora van debajo de la insignia "Gifting just got easier". Escritorio sin cambios.
+
 ## 2026-10-28 · Dominio
 - **giftedbysami.com:** se agrega el archivo `CNAME` para que GitHub Pages sirva el sitio en el dominio propio.
 - **Head (4 páginas):** la vista previa al compartir (`og:url`, `og:image`) ahora usa https://giftedbysami.com/.

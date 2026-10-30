@@ -248,9 +248,9 @@ body.con-barra{padding-top:var(--alto-barra)}
   .about .parrafo{--fm:17;margin-bottom:22px}
   .about .foto{margin:4px -20px 30px;width:calc(100% + 40px);max-width:none}
   .about .por-que{width:88%;margin:6px 0 22px}
-  .about .frase{--fm:17;margin:12px 0 8px}
-  .about .igotu{width:44%;align-self:center;margin-bottom:22px}
-  .about .insignia{width:70%;align-self:center}
+  .about .frase{--fm:17;margin:12px 0 8px;order:1}   /* order: la frase y "i got u" van debajo de la insignia */
+  .about .igotu{width:44%;align-self:center;order:1}
+  .about .insignia{width:70%;align-self:center;margin-bottom:22px}
 
   /* móvil · como-funciona */
   .como .stage{padding:36px 20px 30px}
