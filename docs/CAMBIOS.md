@@ -3,6 +3,7 @@
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
 ## 2026-10-30 · Fase 7 (observaciones de Sami)
+- **Cómo funciona (servicios, celular):** el espacio entre el paso 3 y "Listo, quedaste increíble" ahora es igual al de los demás párrafos (antes quedaban más juntos al mover la galleta). Escritorio sin cambios.
 - **Galleta (servicios, celular):** se quita el destello blanco al romperla. Lo revelado ya no entra con desvanecido en celular, así la galleta rota de los tickets ocupa el lugar de la animada sin quedar en blanco. Escritorio sin cambios.
 - **Galleta (servicios, celular), versión final:** la galleta cerrada ahora va abajo de "¿Prefieres algo ya listo?…". Al tocarla se agita y se abre; luego desaparece y en su lugar queda la galleta rota del inicio de los tickets (una sola galleta), y la página baja a ella. Reemplaza el ajuste anterior de la galleta. Escritorio sin cambios.
 - **Términos y condiciones y Aviso de privacidad:** páginas nuevas `terminos.html` y `privacidad.html` con los textos que entregó Sami (columna de lectura, misma barra y pie). Correcciones de dedo: "sólo" → "solo", "enviandome" → "enviándome", "811687 3612" → "81 1687 3612"; "[correo de contacto]" → sami@giftedbysami.com; "[Aviso de privacidad]" → enlace. Horario de entregas: "de [__ a __] hrs" → "en el horario que acordemos al contratar" (no hay horario fijo).
