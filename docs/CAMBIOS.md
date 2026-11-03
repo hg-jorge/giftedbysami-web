@@ -2,6 +2,9 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-03 · Flechas en celular (memoria del navegador)
+- **Servicios (head):** el enlace a los estilos lleva versión (`styles.css?v=20261103`). En celular se veían las dos flechas sueltas porque el navegador usaba los estilos viejos guardados en memoria con la página nueva. Ahora siempre baja los estilos actuales. Sin cambio de diseño.
+
 ## 2026-11-03 · Texto de express
 - **Express (servicios, escritorio y celular):** "…la fecha antes (guiño guiño) desde +$1,000 · se suma a tu servicio" → "…la fecha antes. Desde +$1,000 · se suma a tu servicio.", como en la captura de referencia.
 
