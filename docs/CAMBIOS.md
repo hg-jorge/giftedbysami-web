@@ -2,6 +2,9 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-03 · Texto de express
+- **Express (servicios, escritorio y celular):** "…la fecha antes (guiño guiño) desde +$1,000 · se suma a tu servicio" → "…la fecha antes. Desde +$1,000 · se suma a tu servicio.", como en la captura de referencia.
+
 ## 2026-11-03 · Flechas en express
 - **Express (servicios):** se agregan flechas a mano que apuntan al celular desde "Sujeto a disponibilidad". En escritorio, flecha horizontal entre el celular y el texto; en celular, flecha curva a la derecha que baja hacia el celular. Imágenes `servicios-express-flecha.webp` y `servicios-express-flecha-curva.webp` (decorativas, sin texto para lectores de pantalla).
 
