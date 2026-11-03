@@ -2,6 +2,11 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-03 · Logo nuevo (LogoV2)
+- **Logo (todas las páginas):** se sustituye por el nuevo logo horizontal "GIFTED by sami" (`LogoV2.png`, original en `../respaldo-original/`). Hero en crema sobre negro; barra y pie en negro. Como es horizontal, se ajustan tamaños en el mismo lugar que el anterior: hero 430 de ancho (celular 220 px), pie 180 / 176 en home (celular 160 px), barra 40 px de alto (celular 34 px).
+- **Favicon y vista previa al compartir:** favicon, ícono de iPhone/Android y `og-imagen.jpg` con el logo nuevo.
+- **Cartelera (home) e insignia (about):** se borra el logo viejo que venía dentro de la imagen y se coloca el nuevo en el mismo sitio.
+
 ## 2026-10-30 · Fase 7 (observaciones de Sami)
 - **Cómo funciona (servicios, celular):** el espacio entre el paso 3 y "Listo, quedaste increíble" ahora es igual al de los demás párrafos (antes quedaban más juntos al mover la galleta). Escritorio sin cambios.
 - **Galleta (servicios, celular):** se quita el destello blanco al romperla. Lo revelado ya no entra con desvanecido en celular, así la galleta rota de los tickets ocupa el lugar de la animada sin quedar en blanco. Escritorio sin cambios.
