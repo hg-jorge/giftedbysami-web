@@ -127,6 +127,8 @@ button{font:inherit;color:inherit}
 .express .celular:hover{transform:translateY(-6px) rotate(-1deg)}
 .express .celular:focus-visible{outline:3px solid var(--foco);outline-offset:4px}
 .express .espacio{width:100%;aspect-ratio:1366/40}
+.express .flecha{pointer-events:none}
+.express .flecha-movil{display:none}
 
 /* ===== SECCIÓN: faq ===== */
 .faq{background:var(--papel)}
@@ -292,6 +294,9 @@ body.con-barra{padding-top:var(--alto-barra)}
   .express .texto{--fm:16;order:-1;margin-bottom:20px}
   .express .celular{width:72%}
   .express .espacio{aspect-ratio:auto;height:30px}
+  .express .flecha{display:none}
+  .express .flecha-movil{display:block;position:relative;width:100%;height:0;z-index:2;pointer-events:none}  /* flecha curva: de "sujeto a disponibilidad" hacia el celular */
+  .express .flecha-movil img{position:absolute;right:4%;top:-30px;width:48px}
   .express .texto p:first-child{margin-top:0}
 
   /* móvil · faq */

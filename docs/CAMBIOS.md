@@ -2,6 +2,9 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-03 · Flechas en express
+- **Express (servicios):** se agregan flechas a mano que apuntan al celular desde "Sujeto a disponibilidad". En escritorio, flecha horizontal entre el celular y el texto; en celular, flecha curva a la derecha que baja hacia el celular. Imágenes `servicios-express-flecha.webp` y `servicios-express-flecha-curva.webp` (decorativas, sin texto para lectores de pantalla).
+
 ## 2026-11-03 · Logo nuevo (LogoV2)
 - **Logo (todas las páginas):** se sustituye por el nuevo logo horizontal "GIFTED by sami" (`LogoV2.png`, original en `../respaldo-original/`). Hero en crema sobre negro; barra y pie en negro. Como es horizontal, se ajustan tamaños en el mismo lugar que el anterior: hero 430 de ancho (celular 220 px), pie 180 / 176 en home (celular 160 px), barra 40 px de alto (celular 34 px).
 - **Favicon y vista previa al compartir:** favicon, ícono de iPhone/Android y `og-imagen.jpg` con el logo nuevo.
