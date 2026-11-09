@@ -12,8 +12,21 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 ## Definiciones de Jorge
 - [ ] **Mensajes de WhatsApp de cada botón** → `assets/js/main.js`, `MENSAJES_WA`:
   `personalizado`, `grupal`, `express` (celular rosa), `footer`, `flotante`.
-- [ ] **Submenú "picks"** (home y barra de menú): destino de `temporada`, `trending` y `all year`. Hoy muestran "estarán disponibles pronto".
-- [ ] **"VER CATÁLOGO"** (ticket Sami's Picks): destino. Hoy muestra "estará disponible pronto".
+- [x] **Submenú "picks" · temporada** → `picks/index.html` (2026-11-09).
+- [ ] **Submenú "picks" · trending y all year**: destino propio. Por ahora también llevan a `picks/index.html`.
+- [x] **"VER CATÁLOGO"** (ticket Sami's Picks) → `picks/index.html` (2026-11-09).
+
+## Tienda picks: confirmar con Sami (marcados `// TODO` en `picks/data/catalogo.js`)
+- [ ] **Copas grabadas:**
+  - La maqueta dice "+$100 c/u".
+  - Se cobra por copa: $100 en Intentions (1 copa) y $200 en Cheers y Fortune (2 copas).
+- [ ] **Fortune:** ya incluye 2 velas de miel, pero la maqueta también las ofrece como extra.
+- [ ] **"Vela 2027 +$199"** (lámina 7): no está en la maqueta 05 y no se agregó.
+- [ ] **Obsidiana Brew:** la descripción menciona una prensa francesa que no está en "Qué incluye".
+- [ ] **Etiqueta de Corporate en el hub:** la maqueta dice "OBSIDIANA · SANG BLEU · BLACK"; se usa la versión con BREW.
+- [ ] **Entregas de New Year:** la maqueta dice "1 al 23 de diciembre" en la ficha; se usa "1 al 30" (como en Save the dates).
+- [ ] **Caja "Tu logo":** "[correo de Gifted]" se cambió por sami@giftedbysami.com.
+- [ ] **Fotos:** ningún producto ni colección tiene foto todavía (se ve el recuadro beige).
 - [x] **Favicon** → listo (2026-10-28). Original en `../respaldo-original/Logo GIFTED by SAMI.png`.
 
 ## Precios (se publican así por ahora; cambiarán)

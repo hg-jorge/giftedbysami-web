@@ -7,6 +7,7 @@
     correo:    'sami@giftedbysami.com',
     instagram: 'https://www.instagram.com/giftedbysami/'
   };
+  window.CONTACTO = CONTACTO;  // lo usa el carrito (assets/js/carrito.js) para "Enviar pedido por WhatsApp"
 
   // Mensaje que llega ya escrito en WhatsApp, uno por botón (atributo data-wa en el HTML)
   // [PENDIENTE: Jorge definirá el mensaje final de cada botón]

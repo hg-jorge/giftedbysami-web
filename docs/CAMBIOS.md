@@ -2,6 +2,30 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-09 · Tienda "picks" (The Winter Collection) y carrito
+Respaldo previo: etiqueta `respaldo-2026-11-09-antes-tienda-picks`.
+- **Nueva tienda en `picks/`** según la maqueta (láminas 04, 05 y 06):
+  - Hub `picks/index.html`.
+  - Colección `picks/coleccion.html?c=<id>` y producto `picks/producto.html?p=<id>`: una plantilla cada una.
+  - Escritorio diseñado aparte: 3 columnas en el hub; en el producto, galería fija a la izquierda y datos a la derecha.
+- **Catálogo:** todos los productos viven en `picks/data/catalogo.js`; las páginas se arman solas. Instrucciones en `picks/COMO-EDITAR-PRODUCTOS.md`.
+- **Estilo de temporada solo en picks/:** barra negra con encaje rojo, adornos (farol, reloj, "with love", moño, cascanueces) y pie vino.
+  - Imágenes `assets/img/picks-*.png`, recortadas de la maqueta.
+  - Tipografías Instrument Serif y Jost (Google Fonts), parecidas a las de la maqueta.
+- **Carrito (todas las páginas):**
+  - Bolsa con contador en la barra; en home, también en la esquina del hero.
+  - Panel lateral en escritorio y pantalla completa en celular.
+  - Botón "Enviar pedido por WhatsApp" que manda el carrito ya escrito; usa el mismo número de `CONTACTO.whatsapp`.
+  - Se guarda en el navegador.
+  - Archivos `assets/js/carrito.js` y `assets/css/tienda.css`.
+- **Submenú "picks" (barra de las 6 páginas y hero de home):** temporada, trending y all year llevan a la tienda.
+- **Servicios · tickets:** "SEE PICKS" de Sami's Picks lleva a la tienda.
+- **main.js:** comparte `CONTACTO` con el carrito (una línea). Sin otro cambio.
+- Verificado:
+  - Capturas a 390 y 1440 px.
+  - Las 6 páginas actuales se ven igual, salvo la bolsa nueva en la barra.
+  - Sin errores en consola.
+
 ## 2026-11-03 · Flechas en celular (memoria del navegador)
 - **Servicios (head):** el enlace a los estilos lleva versión (`styles.css?v=20261103`). En celular se veían las dos flechas sueltas porque el navegador usaba los estilos viejos guardados en memoria con la página nueva. Ahora siempre baja los estilos actuales. Sin cambio de diseño.
 

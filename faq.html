@@ -25,6 +25,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/tienda.css?v=20261109">
 </head>
 <body class="con-barra">
 
@@ -38,14 +39,15 @@
     <a href="servicios.html">servicios</a>
     <div class="barra-picks">
       <button class="barra-picks-boton" type="button" aria-expanded="false" aria-controls="barra-submenu">picks <span aria-hidden="true">▾</span></button>
-      <!-- [PENDIENTE: destino de temporada, trending y all year] -->
+      <!-- [PENDIENTE: destino propio de trending y all year; por ahora los 3 llevan a la tienda] -->
       <div class="barra-submenu" id="barra-submenu" hidden>
-        <a href="#" data-pending="Los picks de temporada estarán disponibles pronto">temporada</a>
-        <a href="#" data-pending="Los picks trending estarán disponibles pronto">trending</a>
-        <a href="#" data-pending="Los picks all year estarán disponibles pronto">all year</a>
+        <a href="picks/index.html">temporada</a>
+        <a href="picks/index.html">trending</a>
+        <a href="picks/index.html">all year</a>
       </div>
     </div>
   </nav>
+  <button class="carrito-boton" type="button" data-carrito-abrir aria-controls="carrito" aria-label="Ver carrito"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="carrito-contador" data-carrito-contador hidden>0</span></button>
 </header>
 <!-- ===== FIN: barra ===== -->
 
@@ -128,6 +130,8 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <!-- ===== FIN: whatsapp-flotante ===== -->
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=20261109"></script>
+<script src="picks/data/catalogo.js"></script>
+<script src="assets/js/carrito.js?v=20261109"></script>
 </body>
 </html>

@@ -27,7 +27,12 @@ Secciones por página (sección → id → clase CSS):
 - **faq.html:** faq → `#faq` → `.faq` · footer
 - **terminos.html / privacidad.html:** legal → `#terminos` / `#privacidad` → `.legal` (columna `.legal-doc`) · footer
 - En todas: barra → `#barra` → `.barra` (menú fijo arriba, siempre visible; en home aparece al bajar con `.barra--home`), footer → `#contacto` → `.footer`, whatsapp-flotante → `.wa-float` + `.toast`
-- **La barra y el pie de página están repetidos en las 6 páginas.** Un cambio en cualquiera de los dos = editar los 6 archivos igual (en la barra solo cambia `aria-current="page"` según la página).
+- **picks/ (tienda, desde 2026-11-09):**
+  - Páginas: `picks/index.html` (hub), `picks/coleccion.html?c=` y `picks/producto.html?p=`.
+  - Contenido: se arma con `picks/js/tienda.js` a partir de `picks/data/catalogo.js`, el único lugar donde viven productos, precios y fechas. Guía: `picks/COMO-EDITAR-PRODUCTOS.md`.
+  - Estilos: `assets/css/tienda.css`. Ahí viven la tienda, el carrito y las variantes `.barra--picks` (negra) y `.footer--picks` (vino).
+  - Carrito: `assets/js/carrito.js`, cargado en las 9 páginas. Usa `CONTACTO.whatsapp` de `main.js`.
+- **La barra y el pie de página están repetidos en las 9 páginas** (6 de la raíz + 3 de picks/, estas con rutas `../`). Un cambio en cualquiera de los dos = editar los 9 archivos igual (en la barra solo cambia `aria-current="page"` según la página). La barra incluye el botón de la bolsa (`.carrito-boton`).
 
 Notas técnicas:
 - Cada sección es un "escenario" (`.stage`, ancho Canva 1366) con coordenadas de Canva: `--H` alto de la sección, `--x/--y/--w` posición de cada elemento, `--fs` tamaño de letra de Canva, `--k` escala. En celular, `--fm` es el tamaño de letra en px y `--mx/--my/--mw` (en %) acomodan los stickers de no-worries.
