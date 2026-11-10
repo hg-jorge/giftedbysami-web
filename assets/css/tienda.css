@@ -31,7 +31,8 @@
 /* Acomodo dentro de la barra: logo · menú · bolsa (escritorio) / logo · bolsa · ☰ (celular) */
 #barra .barra-logo{margin-right:auto}
 #barra .barra-menu{order:1}
-#barra .carrito-boton{order:2;margin-left:clamp(12px,2vw,28px);color:var(--negro)}
+#barra .carrito-boton{order:2;margin-left:clamp(12px,2vw,28px);color:var(--blanco)}
+#barra .carrito-contador{background:var(--blanco);color:var(--negro)}
 #barra .barra-boton{order:3}
 /* Home: bolsa en la esquina del hero (la barra aparece hasta que bajas) */
 .hero-carrito{position:absolute;top:14px;right:clamp(14px,2.5vw,36px);z-index:6;color:var(--blanco)}

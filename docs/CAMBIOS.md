@@ -2,6 +2,18 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-09 · Barra superior negra
+Respaldo previo: etiqueta `respaldo-2026-11-09-antes-barra-negra`.
+- **Barra (todas las páginas):** pasa de crema a negra, igual que la de picks/.
+  - Logo y textos en blanco.
+  - El submenú de picks y el menú ☰ del celular también son negros.
+  - La bolsa del carrito va en blanco y su contador en blanco con número negro.
+  - Cambio en `styles.css` (sección barra) y `tienda.css` (bolsa). En home aplica a la barra que aparece al bajar.
+- **Head (9 páginas):** versión nueva de los estilos (`?v=20261109b`) para que los celulares no muestren la barra vieja guardada en memoria.
+- Verificado:
+  - Capturas antes/después a 1440 y 390 px: solo cambia la barra.
+  - "Notes" de home queda idéntico.
+
 ## 2026-11-09 · Tienda "picks" (The Winter Collection) y carrito
 Respaldo previo: etiqueta `respaldo-2026-11-09-antes-tienda-picks`.
 - **Nueva tienda en `picks/`** según la maqueta (láminas 04, 05 y 06):

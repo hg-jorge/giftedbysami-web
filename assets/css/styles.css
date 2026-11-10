@@ -199,26 +199,26 @@ html.saliendo body > .sec,html.saliendo body > main{animation:salir .28s ease-in
 .submenu:not([hidden]){animation:desplegar .22s ease-out}
 @keyframes desplegar{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 
-/* ===== SECCIÓN: barra (menú fijo arriba, igual en las 4 páginas) ===== */
+/* ===== SECCIÓN: barra (menú fijo arriba, igual en todas las páginas; negra como la de picks/) ===== */
 /* En about, servicios y FAQ se ve desde el inicio (body.con-barra). En home aparece al bajar (.barra--home). */
 :root{--alto-barra:68px}
 body.con-barra{padding-top:var(--alto-barra)}
-.barra{position:fixed;top:0;left:0;right:0;height:var(--alto-barra);z-index:40;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3vw,40px);background:var(--crema);border-bottom:1px solid rgba(0,0,0,.12);font-family:var(--f-menu)}
+.barra{position:fixed;top:0;left:0;right:0;height:var(--alto-barra);z-index:40;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3vw,40px);background:var(--negro);border-bottom:0;font-family:var(--f-menu)}
 .barra--home{transform:translateY(-100%);visibility:hidden;transition:transform .35s ease,visibility 0s .35s}
 .barra--home.visible{transform:none;visibility:visible;transition:transform .35s ease}
 .barra-logo{display:block}
-.barra-logo img{height:40px;width:auto}
+.barra-logo img{height:40px;width:auto;filter:invert(1)}  /* logo negro → blanco */
 .barra-menu{display:flex;align-items:center;gap:clamp(18px,3vw,40px)}
-.barra-menu a,.barra-picks-boton{font-family:inherit;font-size:17px;letter-spacing:.02em;color:var(--negro);text-decoration:none;background:none;border:0;border-bottom:1px solid transparent;padding:6px 0;cursor:pointer;transition:border-color .2s}
-.barra-menu a:hover,.barra-picks-boton:hover,.barra-menu a[aria-current="page"]{border-bottom-color:var(--negro)}
+.barra-menu a,.barra-picks-boton{font-family:inherit;font-size:17px;letter-spacing:.02em;color:var(--blanco);text-decoration:none;background:none;border:0;border-bottom:1px solid transparent;padding:6px 0;cursor:pointer;transition:border-color .2s}
+.barra-menu a:hover,.barra-picks-boton:hover,.barra-menu a[aria-current="page"]{border-bottom-color:var(--blanco)}
 .barra-menu a:focus-visible,.barra-picks-boton:focus-visible,.barra-logo:focus-visible,.barra-boton:focus-visible{outline:3px solid var(--foco);outline-offset:3px}
 .barra-picks{position:relative}
 .barra-picks-boton span{display:inline-block;font-size:.75em;transition:transform .2s}
 .barra-picks-boton[aria-expanded="true"] span{transform:rotate(180deg)}
-.barra-submenu{position:absolute;right:-16px;top:calc(100% + 16px);min-width:150px;display:flex;flex-direction:column;padding:8px 0;background:var(--crema);border:1px solid rgba(0,0,0,.12);border-radius:10px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.barra-submenu{position:absolute;right:-16px;top:calc(100% + 16px);min-width:150px;display:flex;flex-direction:column;padding:8px 0;background:var(--negro);border:1px solid rgba(255,255,255,.2);border-radius:10px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
 .barra-submenu:not([hidden]){animation:desplegar .22s ease-out}
 .barra-submenu a{padding:8px 18px;border:0}
-.barra-submenu a:hover{background:rgba(0,0,0,.05)}
+.barra-submenu a:hover{background:rgba(255,255,255,.1)}
 .barra-boton{display:none}
 #pick-your-ticket{scroll-margin-top:calc(var(--alto-barra) + 8px)}
 #tickets .abierta{scroll-margin-top:calc(var(--alto-barra) + 16px)}
@@ -322,11 +322,11 @@ body.con-barra{padding-top:var(--alto-barra)}
   :root{--alto-barra:58px}
   .barra-logo img{height:34px}
   .barra-boton{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:10px;background:none;border:0;cursor:pointer}
-  .barra-boton span{display:block;height:2px;background:var(--negro);border-radius:2px;transition:transform .25s,opacity .2s}
+  .barra-boton span{display:block;height:2px;background:var(--blanco);border-radius:2px;transition:transform .25s,opacity .2s}
   .barra-boton[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .barra-boton[aria-expanded="true"] span:nth-child(2){opacity:0}
   .barra-boton[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .barra-menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:6px 0 14px;background:var(--crema);border-bottom:1px solid rgba(0,0,0,.12);box-shadow:0 12px 20px rgba(0,0,0,.06)}
+  .barra-menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:6px 0 14px;background:var(--negro);border-bottom:1px solid rgba(255,255,255,.15);box-shadow:0 12px 20px rgba(0,0,0,.06)}
   .barra-menu.abierto{display:flex;animation:desplegar .22s ease-out}
   .barra-menu a,.barra-picks-boton{width:100%;padding:12px 24px;font-size:18px;text-align:left;border:0}
   .barra-menu a[aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
