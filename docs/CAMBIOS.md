@@ -2,6 +2,13 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-09 · Logo del inicio en blanco puro
+Respaldo previo: etiqueta `respaldo-2026-11-09-antes-logo-blanco`.
+- **Hero (home):** el logo "GIFTED by sami" pasa de color hueso (#F3EBE2) a blanco puro (#FFFFFF).
+  - Se hizo con un ajuste de color en `styles.css` (sección hero); el archivo `home-logo.webp` no cambió.
+  - `index.html` lleva una versión nueva de los estilos (`?v=20261109c`) para que el navegador no muestre el logo viejo.
+- Verificado: capturas antes/después a 1440 y 390 px; solo cambia el logo.
+
 ## 2026-11-09 · Barra superior negra
 Respaldo previo: etiqueta `respaldo-2026-11-09-antes-barra-negra`.
 - **Barra (todas las páginas):** pasa de crema a negra, igual que la de picks/.
