@@ -2,6 +2,14 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-13 · Tickets: mismo tamaño en computadora
+Respaldo previo: etiqueta `respaldo-2026-11-13-antes-tamano-tickets`.
+- **Tickets (servicios):** en pantallas grandes, Personalizado y Grupal se veían más chicos que Sami's Picks.
+  - Causa: sus imágenes nuevas son más pequeñas (~375 px) y la imagen se mostraba a su tamaño real.
+  - Ajuste: `.tk img{width:100%}` en `styles.css` (sección tickets). Ahora la imagen siempre llena el ancho del ticket.
+- `servicios.html` lleva una versión nueva de los estilos (`?v=20261113`).
+- Verificado: captura a 1920 px; los 3 tickets miden igual.
+
 ## 2026-11-13 · Términos: precios nuevos de Personalizado y Grupal
 Respaldo previo: etiqueta `respaldo-2026-11-13-antes-terminos-precios`.
 - **Legal (`terminos.html`), punto 4 "Honorarios y precios":**

@@ -115,6 +115,7 @@ button{font:inherit;color:inherit}
 .tk{display:block;transition:transform .25s;cursor:pointer}
 .tk:hover{transform:translateY(-6px) rotate(-.8deg)}
 .tk:focus-visible{outline:3px solid var(--foco);outline-offset:4px}
+.tk img{width:100%}  /* la imagen llena el ancho del ticket aunque el archivo sea más chico */
 
 /* ===== SECCIÓN: franja-1800 (servicios) ===== */
 .franja img{width:100%}
