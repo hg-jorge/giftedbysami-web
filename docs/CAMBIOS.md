@@ -2,6 +2,14 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-13 · Home: menú arriba en lugar de píldoras
+Respaldo previo: etiqueta `respaldo-2026-11-13-antes-menu-home`.
+- **Barra (home):** se ve desde el inicio, igual que en las demás páginas (antes aparecía al bajar). El submenú de picks funciona igual.
+- **Hero (home):** se quitan las 4 píldoras (home, about, servicios, picks) y la bolsa suelta (la bolsa ya está en la barra).
+  - El logo y el texto quedan donde estaban (opción "a" de Jorge).
+- Solo cambió `index.html`.
+- Verificado: capturas antes/después a 1440 y 390 px.
+
 ## 2026-11-09 · Logo del inicio en blanco puro
 Respaldo previo: etiqueta `respaldo-2026-11-09-antes-logo-blanco`.
 - **Hero (home):** el logo "GIFTED by sami" pasa de color hueso (#F3EBE2) a blanco puro (#FFFFFF).

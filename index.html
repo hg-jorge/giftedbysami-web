@@ -27,10 +27,10 @@
 <link rel="stylesheet" href="assets/css/styles.css?v=20261109c">
 <link rel="stylesheet" href="assets/css/tienda.css?v=20261109b">
 </head>
-<body>
+<body class="con-barra">
 
 <!-- ===== SECCIÓN: barra (menú fijo arriba; mismo bloque en las 4 páginas) ===== -->
-<header class="barra barra--home" id="barra">
+<header class="barra" id="barra">
   <a class="barra-logo" href="index.html" aria-label="Gifted by Sami, ir a home"><img src="assets/img/barra-logo.webp" alt="Gifted by Sami"></a>
   <button class="barra-boton" type="button" aria-expanded="false" aria-controls="barra-menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
   <nav class="barra-menu" id="barra-menu" aria-label="Menú">
@@ -53,22 +53,9 @@
 
 <!-- ===== SECCIÓN: hero ===== -->
 <header class="sec hero" id="home">
-  <button class="carrito-boton hero-carrito" type="button" data-carrito-abrir aria-controls="carrito" aria-label="Ver carrito"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="carrito-contador" data-carrito-contador hidden>0</span></button>
   <div class="stage" style="--H:768">
     <h1 class="abs logo" style="--x:468;--y:154;--w:430"><img src="assets/img/home-logo.webp" alt="Gifted by Sami"></h1>
     <p class="abs t lema" style="--x:376;--y:521.9;--w:613.9;--fs:16.49">Regalar bonito, sin perder tu tiempo.<br>Regalos pensados por mí: listos para llevar o hechos a tu medida.</p>
-    <nav class="menu" aria-label="Principal">
-      <a class="pill" style="--x:376.04;--y:652.67" href="index.html">home</a>
-      <a class="pill" style="--x:529.34;--y:653.88" href="about.html">about</a>
-      <a class="pill" style="--x:682.85;--y:653.88" href="servicios.html">servicios</a>
-      <button class="pill" style="--x:836.37;--y:652.67" type="button" id="boton-picks" aria-expanded="false" aria-controls="submenu-picks">picks</button>
-      <!-- [PENDIENTE: destino propio de trending y all year; por ahora los 3 llevan a la tienda] -->
-      <div class="submenu" id="submenu-picks" hidden>
-        <a class="pill" href="picks/index.html">temporada</a>
-        <a class="pill" href="picks/index.html">trending</a>
-        <a class="pill" href="picks/index.html">all year</a>
-      </div>
-    </nav>
   </div>
 </header>
 <!-- ===== FIN: hero ===== -->
