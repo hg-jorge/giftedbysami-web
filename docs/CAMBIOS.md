@@ -2,6 +2,12 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-13 · Términos: precios nuevos de Personalizado y Grupal
+Respaldo previo: etiqueta `respaldo-2026-11-13-antes-terminos-precios`.
+- **Legal (`terminos.html`), punto 4 "Honorarios y precios":**
+  - Personalizado: desde $5,165 → desde $3,500.
+  - Grupal: "$3,165 + 35% … con un presupuesto mínimo de $5,800" → "$3,000 + 35% del presupuesto de regalos acordado". Se quita el mínimo, igual que en el ticket.
+
 ## 2026-11-13 · Tickets: nuevos precios de Personalizado y Grupal
 Respaldo previo: etiqueta `respaldo-2026-11-13-antes-tickets-precios`.
 - **Tickets (servicios.html):** imágenes nuevas de Canva que mandó Jorge, recortadas al borde del papel y pasadas a WebP.

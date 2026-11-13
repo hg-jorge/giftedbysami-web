@@ -38,7 +38,7 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 | Express | desde +$1,000 | texto en `servicios.html`, sección express + aria-label del celular |
 
 Para cambiar un precio de ticket: se edita en Canva, se exporta y se recorta la imagen nueva.
-- [ ] **Términos y condiciones** (`terminos.html`) todavía dicen los precios viejos de Personalizado ($5,165) y Grupal ($3,165 + 35%, mínimo $5,800). Falta que Jorge confirme si se actualizan.
+- [x] **Términos y condiciones** con los precios nuevos de Personalizado y Grupal → listo (2026-11-13).
 - [ ] **Tickets Personalizado y Grupal:** se usaron las exportaciones que mandó Jorge (unos 375 px de ancho; las anteriores eran de ~756 px). Se ven un poco menos nítidos en pantallas Retina. Para que queden perfectos: exportar de Canva a ×2 y reemplazar.
 
 ## Publicación
