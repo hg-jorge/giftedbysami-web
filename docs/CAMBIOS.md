@@ -2,6 +2,14 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-13 · Picks: Sang Bleu (descripción, incluye y precio)
+Respaldo previo: etiqueta `respaldo-2026-11-13-antes-sang-bleu`.
+- **Catálogo (`picks/data/catalogo.js`), producto Sang Bleu:**
+  - Descripción nueva: "Para el team que se merece un brindis. Sang Bleu, un tinto del sur de Francia de Mariatinto, dos copas stemless con tu logo y un sacacorchos para abrirlo cuando quieran."
+  - "Qué incluye": se agrega "Sacacorchos" entre las copas y la keepsake box.
+  - Precio: $1,199 → $1,299.
+- Verificado: captura de la ficha del producto a 1440 px.
+
 ## 2026-11-13 · Picks: encabezado de The Winter Collection más arriba
 Respaldo previo: etiqueta `respaldo-2026-11-13-antes-winter-header`.
 - **Picks-hero (las 3 páginas de picks/):** suben el título, la frase y los adornos para aprovechar mejor el espacio, según la referencia de Jorge.

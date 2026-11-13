@@ -283,13 +283,14 @@ window.CATALOGO = {
       id: 'sang-bleu',
       coleccion: 'corporate',
       nombre: 'Sang Bleu',
-      precio: 1199,
+      precio: 1299,
       tagline: '',
-      descripcion: 'Para el team que se merece un brindis. Sang Bleu, un tinto del sur de Francia de Mariatinto, y dos copas stemless con tu logo para compartirlo.',
+      descripcion: 'Para el team que se merece un brindis. Sang Bleu, un tinto del sur de Francia de Mariatinto, dos copas stemless con tu logo y un sacacorchos para abrirlo cuando quieran.',
       edicion: '',
       incluye: [
         'Mariatinto Sang Bleu 750 ml',
         '2 copas stemless (sin tallo) con tu logo',
+        'Sacacorchos',
         'Keepsake box negra, rígida y con tu logo'
       ],
       imagenes: [],
