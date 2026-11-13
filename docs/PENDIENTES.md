@@ -32,12 +32,14 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 ## Precios (se publican así por ahora; cambiarán)
 | Servicio | Precio hoy | Dónde vive |
 |---|---|---|
-| Personalizado | desde $5,165 | imagen `servicios-ticket-personalizado.webp` + aria-label/alt en `servicios.html` |
-| Grupal | $3,165 + 35% (presupuestos desde $5,800) | imagen `servicios-ticket-grupal.webp` + aria-label/alt |
+| Personalizado | desde $3,500 (desde 2026-11-13) | imagen `servicios-ticket-personalizado.webp` + aria-label/alt en `servicios.html` |
+| Grupal | $3,000 + 35% (desde 2026-11-13) | imagen `servicios-ticket-grupal.webp` + aria-label/alt |
 | Sami's Picks | precios en catálogo, + IVA con factura | imagen `servicios-ticket-sami-picks.webp` + aria-label/alt |
 | Express | desde +$1,000 | texto en `servicios.html`, sección express + aria-label del celular |
 
 Para cambiar un precio de ticket: se edita en Canva, se exporta y se recorta la imagen nueva.
+- [ ] **Términos y condiciones** (`terminos.html`) todavía dicen los precios viejos de Personalizado ($5,165) y Grupal ($3,165 + 35%, mínimo $5,800). Falta que Jorge confirme si se actualizan.
+- [ ] **Tickets Personalizado y Grupal:** se usaron las exportaciones que mandó Jorge (unos 375 px de ancho; las anteriores eran de ~756 px). Se ven un poco menos nítidos en pantallas Retina. Para que queden perfectos: exportar de Canva a ×2 y reemplazar.
 
 ## Publicación
 - [x] Fase 3: revisión ligera (títulos, descripciones, favicon, vista previa, h1, letra del menú, carga diferida, 404).

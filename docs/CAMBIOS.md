@@ -2,6 +2,16 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-13 · Tickets: nuevos precios de Personalizado y Grupal
+Respaldo previo: etiqueta `respaldo-2026-11-13-antes-tickets-precios`.
+- **Tickets (servicios.html):** imágenes nuevas de Canva que mandó Jorge, recortadas al borde del papel y pasadas a WebP.
+  - Personalizado: desde $5,165 → **desde $3,500**.
+  - Grupal: $3,165 + 35% → **$3,000 + 35%**.
+- `aria-label` y `alt` de ambos tickets con los precios nuevos. Se quitó "para presupuestos desde $5,800" del Grupal.
+- Nota: las imágenes nuevas tienen la mitad de resolución que las anteriores (ver `PENDIENTES.md`).
+- `terminos.html` aún menciona los precios viejos: no se tocó, pendiente de confirmar.
+- Verificado: captura de la sección de tickets a 1440 px.
+
 ## 2026-11-13 · Picks: Sang Bleu (descripción, incluye y precio)
 Respaldo previo: etiqueta `respaldo-2026-11-13-antes-sang-bleu`.
 - **Catálogo (`picks/data/catalogo.js`), producto Sang Bleu:**
