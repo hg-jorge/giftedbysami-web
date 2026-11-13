@@ -69,6 +69,9 @@ extras: [
 - `precio` es lo que se suma **por caja**.
 - `detallePrecio` (opcional) es la letra chiquita debajo del nombre.
 - `nota` (opcional) es el texto gris de la caja.
+- `sufijoPrecio` (opcional) es un texto pegado al precio. Ej. `'por caja'` → "· +$399 por caja".
+- En el producto, `tituloExtras` (opcional) cambia el título del bloque. Ej. `tituloExtras: 'Complemento opcional'`; si no se pone, dice "Let’s make it personal...".
+- En los corporativos, el bloque sale después de la caja "Tu logo".
 
 ## Fotos
 

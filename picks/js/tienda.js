@@ -142,17 +142,17 @@
           (p.descripcion ? '<p class="descripcion">' + esc(p.descripcion) + '</p>' : '') +
           (p.agotado ? '<p class="etiqueta" style="margin-top:12px;color:#151414">Agotado</p>' : '') +
           ((p.incluye || []).length ? '<section class="incluye"><h2 class="bloque-titulo">Qué incluye</h2><ul>' + p.incluye.map(function(t){ return '<li>' + esc(t) + '</li>'; }).join('') + '</ul></section>' : '') +
-          (extras.length && !p.agotado ? '<fieldset class="extras"><legend class="bloque-titulo">Let’s make it personal...</legend><div class="extras-lista">' +
+          (p.requiereLogo ? '<section class="tu-logo"><h2>Tu logo</h2>' +
+            (c.textoLogo ? '<p>' + esc(c.textoLogo) + '</p>' : '') +
+            '<p class="aviso-corp">' + esc(CAT.avisoCorporativo) + '</p></section>' : '') +
+          (extras.length && !p.agotado ? '<fieldset class="extras"><legend class="bloque-titulo">' + esc(p.tituloExtras || 'Let’s make it personal...') + '</legend><div class="extras-lista">' +
             extras.map(function(e){
               return '<label class="extra"><input type="checkbox" name="extra" value="' + esc(e.id) + '">' +
-                '<span class="extra-caja"><span><span class="extra-nombre">' + esc(e.nombre) + ' · +' + dinero(e.precio) + '</span>' +
+                '<span class="extra-caja"><span><span class="extra-nombre">' + esc(e.nombre) + ' · +' + dinero(e.precio) + (e.sufijoPrecio ? ' ' + esc(e.sufijoPrecio) : '') + '</span>' +
                 (e.detallePrecio ? '<span class="extra-detalle">' + esc(e.detallePrecio) + '</span>' : '') +
                 (e.nota ? '<span class="extra-nota">' + esc(e.nota) + '</span>' : '') +
                 '</span></span></label>';
             }).join('') + '</div></fieldset>' : '') +
-          (p.requiereLogo ? '<section class="tu-logo"><h2>Tu logo</h2>' +
-            (c.textoLogo ? '<p>' + esc(c.textoLogo) + '</p>' : '') +
-            '<p class="aviso-corp">' + esc(CAT.avisoCorporativo) + '</p></section>' : '') +
           (!p.agotado ? '<div class="ficha-cantidad"><span class="bloque-titulo" id="cantidad-titulo">Cantidad</span>' +
             '<div class="cantidad" role="group" aria-labelledby="cantidad-titulo">' +
               '<button type="button" data-cant="-1" aria-label="Una pieza menos" disabled>−</button>' +

@@ -306,15 +306,18 @@ window.CATALOGO = {
       nombre: 'Black',
       precio: 1499,
       tagline: '',
-      descripcion: 'Para los que prefieren algo más fuerte. Johnnie Walker Etiqueta Negra, un clásico que nunca falla, y un vaso estilo old fashioned para disfrutarlo.',
+      descripcion: 'Para los que prefieren algo más fuerte. Johnnie Walker Etiqueta Negra, un clásico que nunca falla, y dos vasos estilo old fashioned con tu logo para compartirlo.',
       edicion: '',
       incluye: [
         'Johnnie Walker Etiqueta Negra, 750 ml',
-        'Vaso old fashioned, estilo labrado',
+        '2 vasos estilo old fashioned con tu logo',
         'Keepsake box negra, rígida y con tu logo'
       ],
       imagenes: [],
-      extras: [],
+      tituloExtras: 'Complemento opcional',
+      extras: [
+        { id: 'esferas-whisky', nombre: '2 esferas de acero inoxidable para whisky, de 3.8 cm', precio: 399, sufijoPrecio: 'por caja', nota: 'Sujeto a disponibilidad' }
+      ],
       requiereLogo: true,
       activo: true,
       agotado: false,

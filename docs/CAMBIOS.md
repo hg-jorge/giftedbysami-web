@@ -2,6 +2,18 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-13 · Picks: Black (descripción, incluye y complemento opcional)
+Respaldo previo: etiqueta `respaldo-2026-11-13-antes-black`.
+- **Catálogo (`picks/data/catalogo.js`), producto Black:**
+  - Descripción nueva: "Para los que prefieren algo más fuerte. Johnnie Walker Etiqueta Negra, un clásico que nunca falla, y dos vasos estilo old fashioned con tu logo para compartirlo."
+  - "Qué incluye", bullet de en medio: "Vaso old fashioned, estilo labrado" → "2 vasos estilo old fashioned con tu logo".
+  - Nueva casilla "Complemento opcional": 2 esferas de acero inoxidable para whisky, de 3.8 cm · +$399 por caja (sujeto a disponibilidad). Se suma al carrito y al mensaje de WhatsApp.
+- **Ficha de producto (`picks/js/tienda.js`):**
+  - Dos opciones nuevas: `tituloExtras` (título del bloque) y `sufijoPrecio` (texto junto al precio).
+  - Los complementos ahora salen después de "Tu logo", como en la maqueta. En los productos sin "Tu logo" no cambia nada.
+  - Documentado en `picks/COMO-EDITAR-PRODUCTOS.md`.
+- Verificado: captura de la ficha a 1440 px. Prueba de agregar al carrito con la casilla marcada: total $1,898.
+
 ## 2026-11-13 · Tickets: mismo tamaño en computadora
 Respaldo previo: etiqueta `respaldo-2026-11-13-antes-tamano-tickets`.
 - **Tickets (servicios):** en pantallas grandes, Personalizado y Grupal se veían más chicos que Sami's Picks.
