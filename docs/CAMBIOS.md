@@ -2,6 +2,15 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-13 · Picks: encabezado de The Winter Collection más arriba
+Respaldo previo: etiqueta `respaldo-2026-11-13-antes-winter-header`.
+- **Picks-hero (las 3 páginas de picks/):** suben el título, la frase y los adornos para aprovechar mejor el espacio, según la referencia de Jorge.
+  - A 844 px: título y frase suben unos 56 px; "with love", moño y cascanueces, unos 55 px. Las tarjetas empiezan unos 67 px más arriba.
+  - El farol y el reloj no se mueven: ya estaban pegados arriba.
+  - Proporcional en computadora y celular.
+  - Cambio en `tienda.css` (sección picks-hero). Versión nueva de los estilos (`?v=20261113`) en las 3 páginas de picks.
+- Verificado: capturas antes/después a 1440, 844 y 390 px.
+
 ## 2026-11-13 · Home: menú arriba en lugar de píldoras
 Respaldo previo: etiqueta `respaldo-2026-11-13-antes-menu-home`.
 - **Barra (home):** se ve desde el inicio, igual que en las demás páginas (antes aparecía al bajar). El submenú de picks funciona igual.
