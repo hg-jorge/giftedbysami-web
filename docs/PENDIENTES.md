@@ -32,9 +32,9 @@ Marca `[x]` cuando se resuelva. En el código, cada pendiente está marcado con 
 ## Precios (se publican así por ahora; cambiarán)
 | Servicio | Precio hoy | Dónde vive |
 |---|---|---|
-| Personalizado | desde $3,500 (desde 2026-11-13) | imagen `servicios-ticket-personalizado.webp` + aria-label/alt en `servicios.html` |
-| Grupal | $3,000 + 35% (desde 2026-11-13) | imagen `servicios-ticket-grupal.webp` + aria-label/alt |
-| Sami's Picks | precios en catálogo, + IVA con factura | imagen `servicios-ticket-sami-picks.webp` + aria-label/alt |
+| Personalizado | $2,000 + 15% del valor del regalo (desde 2026-11-16) | imagen `servicios-ticket-personalizado.webp` + aria-label/alt en `servicios.html` |
+| Grupal | $3,000 + 15% del presupuesto total (desde 2026-11-16) | imagen `servicios-ticket-grupal.webp` + aria-label/alt |
+| Sami's Picks | precios en catálogo (el ticket ya no menciona IVA; FAQ y términos siguen diciendo + IVA con factura) | imagen `servicios-ticket-sami-picks.webp` + aria-label/alt |
 | Express | desde +$1,000 | texto en `servicios.html`, sección express + aria-label del celular |
 
 Para cambiar un precio de ticket: se edita en Canva, se exporta y se recorta la imagen nueva.

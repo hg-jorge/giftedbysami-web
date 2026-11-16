@@ -2,6 +2,17 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-16 · Términos y FAQ: precios y plazos como los tickets nuevos
+(Mismo respaldo: `respaldo-2026-11-16-antes-tickets-y-textos`.)
+- **Términos, punto 2:**
+  - Personalizado y Grupal suman "búsqueda y compra de productos, traslados". Grupal: "2 propuestas, con hasta 3 regalos distintos según cada persona".
+  - Sami's Picks: "también productos personalizados o con el logo de tu empresa".
+- **Términos, punto 4:** Personalizado $2,000 + 15% del valor del regalo; Grupal $3,000 + 15% del presupuesto total.
+- **Términos, punto 8 y FAQ "¿Con cuánto tiempo lo pido?":** Personalizado de 3 a 21 días; Grupal de 7 a 21 días.
+- **No se cambió**, porque los tickets no lo contradicen y "¿Cómo funciona?" sigue diciendo "envuelvo, pongo la tarjeta":
+  - La envoltura y la tarjeta (FAQ y términos).
+  - El "+ IVA" de Sami's Picks.
+
 ## 2026-11-16 · Tickets: nuevos precios y textos (los 3)
 Respaldo previo: etiqueta `respaldo-2026-11-16-antes-tickets-y-textos`.
 - **Tickets (servicios.html):** imágenes nuevas recortadas de la captura de Canva que mandó Jorge, porque no hay exportaciones directas. Miden ~385 px de ancho.
