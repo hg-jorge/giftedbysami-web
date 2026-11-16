@@ -2,6 +2,15 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-16 · Tickets: nuevos precios y textos (los 3)
+Respaldo previo: etiqueta `respaldo-2026-11-16-antes-tickets-y-textos`.
+- **Tickets (servicios.html):** imágenes nuevas recortadas de la captura de Canva que mandó Jorge, porque no hay exportaciones directas. Miden ~385 px de ancho.
+  - Personalizado: $2,000 + 15% del valor del regalo; anticipación de 3 a 21 días.
+  - Grupal: $3,000 + 15% del presupuesto total; 2 propuestas con hasta 3 regalos distintos; anticipación de 7 a 21 días.
+  - Sami's Picks: "productos personalizados o con tu logo"; ya no dice "+ IVA si requieres factura".
+- `aria-label` y `alt` de los 3 tickets con los textos nuevos.
+- Verificado: captura a 1920 px; los 3 miden igual.
+
 ## 2026-11-16 · About: foto nueva de Sami
 Respaldo previo: etiqueta `respaldo-2026-11-16-antes-foto-about`.
 - **About:** se reemplaza `about-foto-sami.webp` por la foto nueva que mandó Jorge (Sami con su hijo y el pastel).
