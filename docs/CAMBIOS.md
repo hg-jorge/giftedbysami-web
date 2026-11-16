@@ -2,6 +2,14 @@
 
 Formato: fecha · sección · qué cambió. Lo más reciente arriba.
 
+## 2026-11-16 · About: foto nueva de Sami
+Respaldo previo: etiqueta `respaldo-2026-11-16-antes-foto-about`.
+- **About:** se reemplaza `about-foto-sami.webp` por la foto nueva que mandó Jorge (Sami con su hijo y el pastel).
+  - Recortada como en la referencia: sin la franja blanca de abajo y un poco del lado izquierdo.
+  - Tamaño final: 1062 × 1410 px. El original se queda fuera del repo.
+- Texto alternativo: "Sam, fundadora de Gifted by Sami".
+- Verificado: capturas a 1440 y 390 px.
+
 ## 2026-11-13 · Picks: Black (descripción, incluye y complemento opcional)
 Respaldo previo: etiqueta `respaldo-2026-11-13-antes-black`.
 - **Catálogo (`picks/data/catalogo.js`), producto Black:**
